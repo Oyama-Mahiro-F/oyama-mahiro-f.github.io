@@ -406,8 +406,8 @@ code[class*="language-"], pre[class*="language-"] {
 /* GenericUnderline */ .chroma .gl { text-decoration:underline }
 /* TextWhitespace */ .chroma .w { color:#fff }
 
-/* chroma 覆盖 PaperMod 内置 Monokai */
-.chroma { color: var(--hljs-color) !important; background-color: var(--code-block-bg) !important; }
+/* chroma 只覆盖背景，不干涉语法高亮颜色 */
+.chroma { background-color: var(--code-block-bg) !important; }
 .bg { background-color: var(--code-block-bg) !important; }
-[data-theme="dark"] .chroma { color: var(--hljs-color) !important; background-color: var(--code-block-bg) !important; }
+[data-theme="dark"] .chroma { background-color: var(--code-block-bg) !important; }
 [data-theme="dark"] .bg { background-color: var(--code-block-bg) !important; }
