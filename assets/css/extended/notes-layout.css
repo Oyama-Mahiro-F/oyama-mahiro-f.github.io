@@ -8,7 +8,62 @@
     --notes-toc-w: 220px;
     --notes-accent: #3f51b5;
     --notes-accent-light: #e8eaf6;
+
+    /* 白天模式代码块：浅色背景 */
+    --code-block-bg: #f8f8f8;
+    --code-bg: #f0f0f0;
+    --hljs-bg: #f8f8f8;
+    --hljs-color: #24292e;
 }
+
+[data-theme="dark"] {
+    /* 黑夜模式代码块：深色背景 */
+    --code-block-bg: #1e1e1e;
+    --code-bg: #2d2d2d;
+    --hljs-bg: #1e1e1e;
+    --hljs-color: #e6e6e6;
+}
+
+/* 深色模式下 GitHub 高亮主题颜色适配 */
+[data-theme="dark"] .chroma .c,
+[data-theme="dark"] .chroma .c1,
+[data-theme="dark"] .chroma .cm,
+[data-theme="dark"] .chroma .cp,
+[data-theme="dark"] .chroma .cs { color: #8b949e; } /* 注释 */
+[data-theme="dark"] .chroma .k,
+[data-theme="dark"] .chroma .kc,
+[data-theme="dark"] .chroma .kd,
+[data-theme="dark"] .chroma .kn,
+[data-theme="dark"] .chroma .kr { color: #ff7b72; } /* 关键字 */
+[data-theme="dark"] .chroma .na,
+[data-theme="dark"] .chroma .nc,
+[data-theme="dark"] .chroma .nd,
+[data-theme="dark"] .chroma .ne,
+[data-theme="dark"] .chroma .nf,
+[data-theme="dark"] .chroma .nx { color: #d2a8ff; } /* 函数/类名 */
+[data-theme="dark"] .chroma .s,
+[data-theme="dark"] .chroma .sa,
+[data-theme="dark"] .chroma .sb,
+[data-theme="dark"] .chroma .sc,
+[data-theme="dark"] .chroma .dl,
+[data-theme="dark"] .chroma .s1,
+[data-theme="dark"] .chroma .s2 { color: #a5d6ff; } /* 字符串 */
+[data-theme="dark"] .chroma .m,
+[data-theme="dark"] .chroma .mb,
+[data-theme="dark"] .chroma .mf,
+[data-theme="dark"] .chroma .mh,
+[data-theme="dark"] .chroma .mi,
+[data-theme="dark"] .chroma .il,
+[data-theme="dark"] .chroma .mo { color: #79c0ff; } /* 数字 */
+[data-theme="dark"] .chroma .o,
+[data-theme="dark"] .chroma .ow { color: #ff7b72; } /* 运算符 */
+[data-theme="dark"] .chroma .nb,
+[data-theme="dark"] .chroma .bp { color: #ffa657; } /* 内置 */
+[data-theme="dark"] .chroma .nt { color: #7ee787; } /* 标签 */
+[data-theme="dark"] .chroma .nv,
+[data-theme="dark"] .chroma .vc,
+[data-theme="dark"] .chroma .vg,
+[data-theme="dark"] .chroma .vi { color: #79c0ff; } /* 变量 */
 
 /* 覆盖 PaperMod 的 720px 宽度限制，让笔记页铺满全屏 */
 body:has(.notes-layout) .main {

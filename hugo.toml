@@ -31,7 +31,7 @@ paginate = 8
   [markup.highlight]
     noClasses = false
     guessSyntax = true
-    style = 'monokai'
+    style = 'github'
 
 # 站点参数
 [params]
