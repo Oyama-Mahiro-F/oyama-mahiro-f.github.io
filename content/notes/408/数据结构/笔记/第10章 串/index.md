@@ -209,11 +209,11 @@ int Index_BF(SString S, SString T) {
 
 **`next` 数组定义**：在模式串中（下标从1开始），`next[i]` 表示模式串中以下标 `i` 处字符结尾的子串的最大相同前后缀的长度。
 $$
-next[j] = \begin{cases}
-0 & \text{当 } j = 1 \\
-\text{max}\{k \mid 1 < k < j \text{ 且 } T[1..k-1] = T[j-k+1..j-1]\} & \text{当此集合非空} \\
-1 & \text{其他情况}
-\end{cases}
+next[j] = \\begin{cases}
+0 & \\text{当 } j = 1 \\\\
+\\text{max}\\{k \\mid 1 < k < j \\text{ 且 } T[1..k-1] = T[j-k+1..j-1]\\} & \\text{当此集合非空} \\\\
+1 & \\text{其他情况}
+\\end{cases}
 $$
 
 ```

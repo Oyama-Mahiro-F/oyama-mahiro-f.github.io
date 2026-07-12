@@ -254,23 +254,23 @@ I/O 设备是计算机与外界进行数据交换的桥梁。
 #### 一、软件的分类
 
 $$
-\text{计算机软件} 
-\begin{cases}
-  \text{系统软件}  \begin{cases}
-    \text{操作系统（OS）} \\
-    \text{编译程序 / 解释程序} \\
-    \text{汇编程序} \\
-    \text{数据库管理系统（DBMS）} \\
-    \text{网络软件} \\
-    \text{各种服务性程序（调试程序、诊断程序等）}
-  \end{cases} \\
-  \text{应用软件}  \begin{cases}
-    \text{科学计算程序} \\
-    \text{数据处理程序} \\
-    \text{办公软件} \\
-    \text{各种专用软件}
-  \end{cases}
-\end{cases}
+\\text{计算机软件} 
+\\begin{cases}
+  \\text{系统软件}  \\begin{cases}
+    \\text{操作系统（OS）} \\\\
+    \\text{编译程序 / 解释程序} \\\\
+    \\text{汇编程序} \\\\
+    \\text{数据库管理系统（DBMS）} \\\\
+    \\text{网络软件} \\\\
+    \\text{各种服务性程序（调试程序、诊断程序等）}
+  \\end{cases} \\\\
+  \\text{应用软件}  \\begin{cases}
+    \\text{科学计算程序} \\\\
+    \\text{数据处理程序} \\\\
+    \\text{办公软件} \\\\
+    \\text{各种专用软件}
+  \\end{cases}
+\\end{cases}
 $$
 
 | 类别 | 定义 | 举例 |
@@ -481,12 +481,12 @@ CPU 逐条取指令、译码、执行
 
 **存储器带宽**：单位时间内存储器所能传输的数据量，反映存储器的数据传输速率。
 $$
-\text{存储器带宽} = \text{数据总线宽度} \times \text{存储器工作频率}
+\\text{存储器带宽} = \\text{数据总线宽度} \\times \\text{存储器工作频率}
 $$
 
 若每个存储周期可传输多次数据（如 DDR），则：
 $$
-\text{存储器带宽} = \text{数据总线宽度} \times \text{工作频率} \times \text{每周期传输次数}
+\\text{存储器带宽} = \\text{数据总线宽度} \\times \\text{工作频率} \\times \\text{每周期传输次数}
 $$
 | 指标 | 含义 | 单位 | 公式 |
 |:---|:---|:---|:---|
@@ -505,7 +505,7 @@ $$存储器带宽 = 8\ \text{B} \times 1600 \times 10^6 \times 2 = 25.6\ \text{G
 | **主频 ($f$)** | CPU 内数字脉冲信号的振荡频率 | 单位：Hz（如 3.0 GHz） |
 | **时钟周期 ($T$)** | 主频的倒数，即一个时钟脉冲的时间 | $T = 1/f$ |
 
-> 例如主频 3.0 GHz → 时钟周期 $T = 1/(3 \times 10^9) \approx 0.333$ ns
+> 例如主频 3.0 GHz → 时钟周期 $T = 1/(3 \\times 10^9) \\approx 0.333$ ns
 
 ##### 2. CPI（Clock cycles Per Instruction）
 
@@ -560,9 +560,9 @@ $$MIPS = \frac{\text{指令条数}}{\text{执行时间} \times 10^6} = \frac{f}{
 |:---|:---|:---|:---|
 | 时钟周期 | $T = 1/f$ | 秒 (s) | 制造工艺 |
 | 主频 | $f = 1/T$ | Hz | 制造工艺 |
-| CPI | $CPI = \text{总时钟数} / \text{总指令数}$ | — | ISA + 微架构 |
-| CPU 执行时间 | $t = \text{指令数} \times CPI \times T$ | 秒 (s) | 指令数 × CPI × T |
-| MIPS | $f / (CPI \times 10^6)$ | 百万条/秒 | f + CPI |
+| CPI | $CPI = \\text{总时钟数} / \\text{总指令数}$ | — | ISA + 微架构 |
+| CPU 执行时间 | $t = \\text{指令数} \\times CPI \\times T$ | 秒 (s) | 指令数 × CPI × T |
+| MIPS | $f / (CPI \\times 10^6)$ | 百万条/秒 | f + CPI |
 
 > **优化方向**：
 > - 减少指令条数 → 改进算法、优化编译器

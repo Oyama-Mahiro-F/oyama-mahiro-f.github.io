@@ -15,6 +15,17 @@ paginate = 8
 # 代码高亮
 [markup]
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.block]
+          # 保护 $$...$$ 块不被 Goldmark 处理
+          open = '(?s)^\\$\\$[^\\$]*$'
+          close = '(?s)^\\$\\$[^\\$]*$'
+        [markup.goldmark.extensions.passthrough.inline]
+          # 保护 $...$ 行内公式
+          open = '(?P<open>\\$(?=[^\\s\\$]).*?(?<=\\S)\\$)'
+          close = '(?-open)'
     [markup.goldmark.renderer]
       unsafe = true       # 允许渲染原始 HTML
   [markup.highlight]
