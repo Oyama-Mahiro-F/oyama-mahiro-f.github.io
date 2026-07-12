@@ -10,6 +10,12 @@
     --notes-accent-light: #e8eaf6;
 }
 
+/* 覆盖 PaperMod 的 720px 宽度限制，让笔记页铺满全屏 */
+body:has(.notes-layout) .main {
+    max-width: none;
+    padding: 0;
+}
+
 /* 笔记页面的 main 区域改为三栏 */
 .notes-layout {
     display: flex;
