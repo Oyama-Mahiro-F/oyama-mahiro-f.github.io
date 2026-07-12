@@ -17,3 +17,9 @@ Thumbs.db
 
 # Hugo lock file
 .hugo_build.lock
+
+# Obsidian vault config
+.obsidian/
+
+# Claude Code
+.claude/

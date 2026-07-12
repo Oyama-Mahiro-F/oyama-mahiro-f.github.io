@@ -8,11 +8,15 @@ locale = 'zh-CN'
 title = "Oyama Mahiro's Blog"
 theme = 'PaperMod'
 
+
 # 分页
 paginate = 8
 
 # 代码高亮
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true       # 允许渲染原始 HTML
   [markup.highlight]
     noClasses = false
     guessSyntax = true
@@ -41,6 +45,9 @@ paginate = 8
     name = 'github'
     url = 'https://github.com/Oyama-Mahiro-F'
 
+  # KaTeX 数学公式渲染
+  math = true
+
   # 搜索
   [params.fuseOpts]
     isCaseSensitive = false
@@ -56,6 +63,12 @@ paginate = 8
   name = '文章'
   url = '/posts/'
   weight = 10
+
+[[menu.main]]
+  identifier = 'notes'
+  name = '笔记'
+  url = '/notes/'
+  weight = 15
 
 [[menu.main]]
   identifier = 'tags'
