@@ -1,0 +1,82 @@
+# ============================================
+# Hugo + PaperMod 博客配置
+# 站点地址: https://oyama-mahiro-f.github.io
+# ============================================
+
+baseURL = 'https://oyama-mahiro-f.github.io/'
+locale = 'zh-CN'
+title = "Oyama Mahiro's Blog"
+theme = 'PaperMod'
+
+# 分页
+paginate = 8
+
+# 代码高亮
+[markup]
+  [markup.highlight]
+    noClasses = false
+    guessSyntax = true
+    style = 'monokai'
+
+# 站点参数
+[params]
+  env = 'production'
+  author = 'Oyama Mahiro'
+  description = '技术学习笔记与项目经验分享'
+  defaultTheme = 'auto'        # auto / light / dark
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true               # 显示文章目录
+  TocOpen = true               # 默认展开目录
+
+  # 首页显示
+  [params.homeInfoParams]
+    Title = '你好 👋'
+    Content = '欢迎来到我的技术博客。这里记录我的编程学习、项目经验和思考。'
+
+  # 社交链接
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/Oyama-Mahiro-F'
+
+  # 搜索
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 100
+    threshold = 0.4
+    minMatchCharLength = 0
+
+# 主菜单
+[[menu.main]]
+  identifier = 'posts'
+  name = '文章'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'tags'
+  name = '标签'
+  url = '/tags/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'archives'
+  name = '归档'
+  url = '/archives/'
+  weight = 30
+
+[[menu.main]]
+  identifier = 'search'
+  name = '搜索'
+  url = '/search/'
+  weight = 40
+
+[[menu.main]]
+  identifier = 'about'
+  name = '关于'
+  url = '/about/'
+  weight = 50
