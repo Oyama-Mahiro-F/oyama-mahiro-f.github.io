@@ -14,6 +14,7 @@
     --code-bg: #f0f0f0;
     --hljs-bg: #f8f8f8;
     --hljs-color: #24292e;
+    --font-mono: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }
 
 [data-theme="dark"] {
@@ -319,4 +320,11 @@ body:has(.notes-layout) .header-nav {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* ===== 代码块字体 ===== */
+code, pre, .md-content code, .md-content pre,
+.chroma code, .chroma pre, .highlight code, .highlight pre,
+code[class*="language-"], pre[class*="language-"] {
+    font-family: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace !important;
 }
