@@ -62,4 +62,64 @@
   {{- end }}
 </div>
 
+<script>
+(() => {
+  // === 左侧文件树：点击箭头折叠/展开，不跳转 ===
+  document.querySelectorAll('.notes-sidebar .nav-toggle').forEach(el => {
+    el.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      const section = this.closest('.nav-section');
+      if (section) section.classList.toggle('collapsed');
+    });
+  });
+
+  // === 左侧文件树：点击 section 标题展开子节点但不跳转 ===
+  document.querySelectorAll('.notes-sidebar .nav-section-title').forEach(el => {
+    el.addEventListener('click', function(e) {
+      const section = this.closest('.nav-section');
+      if (section && section.querySelector('.nav-children')) {
+        // 如果已展开，允许跳转；否则展开并阻止跳转
+        if (section.classList.contains('collapsed')) {
+          e.preventDefault();
+          section.classList.remove('collapsed');
+        }
+      }
+    });
+  });
+
+  // === 右侧 TOC：可折叠的层级目录 ===
+  const toc = document.getElementById('TableOfContents');
+  if (toc) {
+    toc.querySelectorAll('li').forEach(li => {
+      const subUl = li.querySelector('ul');
+      if (subUl) {
+        li.classList.add('toc-section');
+        const toggle = document.createElement('span');
+        toggle.className = 'toc-toggle';
+        toggle.textContent = '▼';
+        toggle.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          li.classList.toggle('collapsed');
+        });
+        const anchor = li.querySelector('a');
+        if (anchor) anchor.prepend(toggle);
+        subUl.classList.add('toc-children');
+      }
+    });
+  }
+
+  // === 手机端：点击侧边栏外部关闭 ===
+  document.addEventListener('click', function(e) {
+    const sidebar = document.getElementById('notes-sidebar');
+    if (sidebar && sidebar.classList.contains('open')) {
+      if (!sidebar.contains(e.target) && !e.target.closest('.notes-sidebar-toggle')) {
+        sidebar.classList.remove('open');
+      }
+    }
+  });
+})();
+</script>
+
 {{- end }}{{/* end main */}}

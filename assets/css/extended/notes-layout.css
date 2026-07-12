@@ -180,6 +180,22 @@ body:has(.notes-layout) .header-nav {
     font-size: 0.74rem;
 }
 
+/* TOC 折叠展开 */
+.notes-toc .toc-toggle {
+    font-size: 0.55rem;
+    margin-right: 4px;
+    cursor: pointer;
+    user-select: none;
+    display: inline-block;
+    transition: transform 0.15s;
+}
+.notes-toc .toc-section.collapsed .toc-children {
+    display: none;
+}
+.notes-toc .toc-section.collapsed > a .toc-toggle {
+    transform: rotate(-90deg);
+}
+
 /* 手机端适配 */
 @media (max-width: 900px) {
     .notes-sidebar {
