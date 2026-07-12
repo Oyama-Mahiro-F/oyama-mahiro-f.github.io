@@ -406,10 +406,10 @@ code[class*="language-"], pre[class*="language-"] {
 /* GenericUnderline */ .chroma .gl { text-decoration:underline }
 /* TextWhitespace */ .chroma .w { color:#fff }
 
-/* chroma 只覆盖背景，不干涉语法高亮颜色 */
-.chroma { background-color: var(--code-block-bg) !important; }
+/* chroma：背景 + 默认文字颜色（覆盖 Monokai #cad3f5 浅灰） */
+.chroma { color: #24292f; background-color: var(--code-block-bg) !important; }
 .bg { background-color: var(--code-block-bg) !important; }
-[data-theme="dark"] .chroma { background-color: var(--code-block-bg) !important; }
+[data-theme="dark"] .chroma { color: #e6edf3; background-color: var(--code-block-bg) !important; }
 [data-theme="dark"] .bg { background-color: var(--code-block-bg) !important; }
 
 /* 白天模式：覆盖 Monokai 残留的浅色类（GitHub Chroma 未覆盖到的 Name 类） */
