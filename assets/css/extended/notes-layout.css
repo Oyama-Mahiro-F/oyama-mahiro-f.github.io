@@ -411,3 +411,7 @@ code[class*="language-"], pre[class*="language-"] {
 .bg { background-color: var(--code-block-bg) !important; }
 [data-theme="dark"] .chroma { background-color: var(--code-block-bg) !important; }
 [data-theme="dark"] .bg { background-color: var(--code-block-bg) !important; }
+
+/* 白天模式：覆盖 Monokai 残留的浅色类（GitHub Chroma 未覆盖到的 Name 类） */
+.chroma .ne,
+.chroma .py { color: #24292f; }
