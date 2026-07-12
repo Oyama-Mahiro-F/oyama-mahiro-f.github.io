@@ -25,7 +25,7 @@ categories: ["笔记"]
 - **入栈 / 压栈 (Push)**：向栈顶添加新元素的操作。
 - **出栈 / 退栈 (Pop)**：将栈顶元素删除并取出的操作。
 
-![image-20260624210445008](第3章 栈.assets/image-20260624210445008.png)
+![image-20260624210445008](image-20260624210445008.png)
 
 ##### 3. 关键数学性质：出栈序列
 
@@ -339,7 +339,7 @@ top=-1                    top=0                    top=1
 
 ###### ④ 记忆技巧
 
-![ascii-art-image (2)](第3章 栈.assets/ascii-art-image (2).png)
+![ascii-art-image (2)](ascii-art-image (2).png)
 
 > ⚠️ **考研提醒**：严蔚敏教材默认 `top = 0`（top 指向栈顶下一位置），但很多习题使用 `top = -1`（top 直接指向栈顶）。**审题时先确认题目给的 `top` 初始值，再推导对应的判空、入栈、出栈代码！**
 
@@ -1005,7 +1005,7 @@ n=0 : 结束
 
 **ASCII 图解：`factorial(3)` 递归栈帧推演**
 
-![ascii-art-image (1)](第3章 栈.assets/ascii-art-image (1).png)
+![ascii-art-image (1)](ascii-art-image (1).png)
 
 #### 四、函数调用
 
@@ -1045,7 +1045,7 @@ n=0 : 结束
 
 **ASCII 图解：`main() → A() → B()` 调用链栈帧变化**
 
-![ascii-art-image](第3章 栈.assets/ascii-art-image.png)
+![ascii-art-image](ascii-art-image.png)
 
 #### 五、表达式求值
 
@@ -1103,7 +1103,7 @@ n=0 : 结束
 
 **阶段一关键时刻 ASCII 栈快照**
 
-![ascii-art-image (3)](第3章 栈.assets/ascii-art-image (3).png)
+![ascii-art-image (3)](ascii-art-image (3).png)
 
 **第二阶段：后缀表达式求值（代入 $b=30, a=2$）**
 

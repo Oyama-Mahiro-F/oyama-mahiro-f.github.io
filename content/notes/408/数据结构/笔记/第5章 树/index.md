@@ -630,7 +630,7 @@ typedef struct ThreadNode {
           1=前驱         1=后继
 ```
 
-![Gemini_Generated_Image_6wt9o36wt9o36wt9](第5章 树.assets/Gemini_Generated_Image_6wt9o36wt9o36wt9.png)
+![Gemini_Generated_Image_6wt9o36wt9o36wt9](Gemini_Generated_Image_6wt9o36wt9o36wt9.png)
 
 ##### 中序线索化
 

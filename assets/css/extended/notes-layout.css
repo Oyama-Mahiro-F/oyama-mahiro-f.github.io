@@ -16,10 +16,24 @@ body:has(.notes-layout) .main {
     padding: 0;
 }
 
+/* 笔记页：header 固定 + 全宽 */
+body:has(.notes-layout) .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--theme);
+    max-width: none;
+}
+
+body:has(.notes-layout) .header-nav {
+    max-width: none;
+    padding: 0 24px;
+}
+
 /* 笔记页面的 main 区域改为三栏 */
 .notes-layout {
     display: flex;
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - var(--header-height));
     max-width: 100%;
 }
 

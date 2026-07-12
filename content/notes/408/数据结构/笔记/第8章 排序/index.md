@@ -336,7 +336,7 @@ void BubbleSort(int a[], int n) {
 
 每次选一个**枢轴（pivot）**，将序列划分为左右两部分：左边全部 $\leq$ pivot，右边全部 $\geq$ pivot，然后递归排序左右子序列。
 
-![alg-sort-fast-1](第8章 排序.assets/alg-sort-fast-1.jpg)
+![alg-sort-fast-1](alg-sort-fast-1.jpg)
 
 ##### 2. 算法实现
 
@@ -543,7 +543,7 @@ $$\text{比较次数} = \sum_{i=1}^{n-1} (n-i) = \frac{n(n-1)}{2}$$
 
 ④ **重复**上述步骤，直到全部记录排好序为止。
 
-![heaplogith](第8章 排序.assets/heaplogith.png)
+![heaplogith](heaplogith.png)
 
 ##### 3. 算法实现
 
@@ -824,7 +824,7 @@ void RadixSort(RecType R[], int n, int d) {
 
 **(2) 多路归并**：对这些初始归并段反复进行归并，直到得到整个有序文件。
 
-[演示](第8章 排序.assets/external-sort-simulator.html)
+[演示](external-sort-simulator.html)
 
 ##### 2. 多路平衡归并与败者树
 
@@ -835,7 +835,7 @@ void RadixSort(RecType R[], int n, int d) {
 | 归并趟数 | $s = \lceil \log_k m \rceil$（$m$ 为初始归并段数） |
 | 最佳归并树 | 用哈夫曼树思想构造 I/O 次数最少的归并顺序 |
 
-**利用败者树实现 $K$ 路平衡归并**：[演示](第8章 排序.assets/Loser_Tree.html)
+**利用败者树实现 $K$ 路平衡归并**：[演示](Loser_Tree.html)
 
 在 $k$ 路归并中，每次需从 $k$ 个归并段的当前第一个记录中选出最小值。若每次简单比较，需 $k-1$ 次比较。**败者树**将 $k$ 个归并段组织为一棵完全二叉树，每次选最小仅需 $\lceil \log_2 k \rceil$ 次比较。
 
@@ -903,7 +903,7 @@ void RadixSort(RecType R[], int n, int d) {
 4. 从工作区选出 $\geq$ 上一个输出值的最小关键字输出；若找不到（即所有都 < 上一个输出），则该归并段结束，从当前工作区重新选出最小关键字开始新的一段
 5. 重复 ③④，直到输入文件读完且工作区为空
 
-**示例**：[演示](第8章 排序.assets/Replacement_Selection.html)
+**示例**：[演示](Replacement_Selection.html)
 
 > 常规方法（$w=3$）产生 $\lceil 9/3 \rceil = 3$ 个段；置换-选择排序仅产生 **2** 个段，且 Run1 长度达 8。
 

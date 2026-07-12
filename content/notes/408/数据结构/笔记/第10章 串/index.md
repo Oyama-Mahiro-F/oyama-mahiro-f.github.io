@@ -290,7 +290,7 @@ S: B  B  C     A  B  C  D  A  B     A  B  C  D  A  B  C  D  A  B  D  E
 
 > 关键：步骤 ⑧→⑨，$S[12..17]$ = `"ABCDAB"` 已匹配 6 个字符后 $S[18]$≠$T[7]$，由于 `next[7]=3`，$j$ 回退到 3——利用已匹配的 `"AB"` 前缀，$i$ 不动继续比较 $S[18]$ 和 $T[3]$。
 
-[KMP 演示](第10章 串.assets/kmp.html)
+[KMP 演示](kmp.html)
 
 **KMP 匹配过程（C++ 代码）**：
 
