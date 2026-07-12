@@ -2,6 +2,20 @@
 
 {{- $hasToc := and (.Param "ShowToc") (.TableOfContents) }}
 
+{{/* KaTeX 数学公式渲染 */}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5QMMRxtU0Qy4qx42i0IX/4vRyB6Dnxdu7qZ3ai4PxXjXVlObfPE" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuoB5nTepzDfO4u2ANlcxuxmw4K2V1xW3ABRKrWKAEXt4z/F1nqwC8jwM" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+    onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+            {left: '\\(', right: '\\)', display: false},
+            {left: '\\[', right: '\\]', display: true}
+        ],
+        throwOnError: false
+    });"></script>
+
 <button class="notes-sidebar-toggle" onclick="document.querySelector('.notes-sidebar').classList.toggle('open')" aria-label="Toggle sidebar">
   ☰
 </button>
