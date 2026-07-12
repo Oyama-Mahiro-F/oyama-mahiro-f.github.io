@@ -54,7 +54,7 @@ categories: ["笔记"]
 | **运算器** | 执行**算术运算**和**逻辑运算** |
 | **控制器** | 控制各部件协调工作，按顺序从存储器取指令并执行 |
 
-![image-20260709141503957](第1章_计算机系统概述.assets/image-20260709141503957.png)
+![image-20260709141503957](image-20260709141503957.png)
 
 ##### 2. 核心理念："存储程序"
 
@@ -88,7 +88,7 @@ categories: ["笔记"]
 - **主机** = CPU + 主存储器（内存）
 - **I/O 设备（外设）** = 输入设备 + 输出设备 + 辅助存储器（外存）
 
-![image-20260303185816884](assets/image-20260303185816884.png)
+![image-20260303185816884](image-20260303185816884.png)
 
 #### 三、各个硬件的工作原理
 
@@ -120,7 +120,7 @@ categories: ["笔记"]
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 20%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第1章 计算机系统概述.assets/image-20260711032640623.png" alt="运算器结构" style="max-width: 100%;">
+      <img src="image-20260711032640623.png" alt="运算器结构" style="max-width: 100%;">
     </td>
     <td style="width: 80%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse; text-align: left;">
@@ -172,7 +172,7 @@ categories: ["笔记"]
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 20%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第1章 计算机系统概述.assets/image-20260711032429198.png" alt="控制器结构" style="max-width: 100%;">
+      <img src="image-20260711032429198.png" alt="控制器结构" style="max-width: 100%;">
     </td>
     <td style="width: 80%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse; text-align: left;">

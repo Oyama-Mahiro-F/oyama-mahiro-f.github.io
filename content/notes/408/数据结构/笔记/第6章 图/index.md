@@ -70,7 +70,7 @@ categories: ["笔记"]
 | **握手定理** | 无向图 $\sum\deg(v) = 2e$；有向图 $\sum\text{in}(v) = \sum\text{out}(v) = e$ |
 
 <div style="display: flex; align-items: center; gap: 30px; margin-bottom: 20px;">
-<img src="第6章 图.assets/image-20260701105537054.png" style="width: 280px; margin: 0;">
+<img src="image-20260701105537054.png" style="width: 280px; margin: 0;">
 <table style="margin: 0; min-width: 300px;">
 <thead>
 <tr>
@@ -150,7 +150,7 @@ categories: ["笔记"]
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 27%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第6章 图.assets/image-20260701225423983.png" alt="图例" style="max-width: 100%;">
+      <img src="image-20260701225423983.png" alt="图例" style="max-width: 100%;">
     </td>
     <td style="width: 70%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse;">
@@ -256,7 +256,7 @@ $$
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 36%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第6章 图.assets/image-20260701235458869.png" alt="图例" style="max-width: 100%;">
+      <img src="image-20260701235458869.png" alt="图例" style="max-width: 100%;">
     </td>
     <td style="width: 50%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse; text-align: center;">
@@ -319,7 +319,7 @@ $$
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 50%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第6章 图.assets/image-20260702002303966.png" alt="带权无向图" style="max-width: 100%;">
+      <img src="image-20260702002303966.png" alt="带权无向图" style="max-width: 100%;">
     </td>
     <td style="width: 50%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse; text-align: center;">
@@ -398,7 +398,7 @@ $$
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 50%; vertical-align: top; border: none; padding-right: 20px;">
-      <img src="第6章 图.assets/image-20260702011141534.png" alt="带权有向图" style="max-width: 100%;">
+      <img src="image-20260702011141534.png" alt="带权有向图" style="max-width: 100%;">
     </td>
     <td style="width: 50%; vertical-align: top; border: none;">
       <table style="width: 100%; border-collapse: collapse; text-align: center;">
