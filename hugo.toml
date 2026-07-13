@@ -4,6 +4,7 @@
 # ============================================
 
 baseURL = 'https://oyama-mahiro-f.github.io/'
+
 locale = 'zh-CN'
 title = "Oyama Mahiro's Blog"
 theme = 'PaperMod'
@@ -104,3 +105,9 @@ paginate = 8
   name = '关于'
   url = '/about/'
   weight = 50
+
+[outputs]
+  home = ["HTML", "JSON"]
+  section = ["HTML"]
+  page = ["HTML"]
+
