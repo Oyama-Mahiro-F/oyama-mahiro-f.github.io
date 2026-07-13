@@ -40,7 +40,7 @@ paginate = 8
 [params]
   env = 'production'
   author = 'Oyama Mahiro'
-  description = '技术学习笔记与项目经验分享'
+  description = '技术博客与项目经验分享'
   defaultTheme = 'auto'        # auto / light / dark
   ShowShareButtons = false
   ShowReadingTime = true
