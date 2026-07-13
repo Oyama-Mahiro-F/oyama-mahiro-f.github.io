@@ -415,8 +415,9 @@ body:has(.notes-body) .main {
     flex-direction: column;
 }
 body:has(.notes-body) .footer,
-body:has(.notes-body) #top-link {
-    display: none;
+body:has(.notes-body) #top-link,
+body:has(.notes-body) .post-footer {
+    display: none !important;
 }
 
 .notes-body {
