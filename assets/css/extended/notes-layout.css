@@ -430,3 +430,256 @@ code[class*="language-"], pre[class*="language-"] {
 /* 通用：覆盖 PaperMod md-content.css 中 .md-content pre code { color: rgb(213,213,214) } 的浅色文字，
    否则白天模式下浅色背景上变量名（class=n 继承自 code）几乎不可见 */
 .md-content pre code { color: inherit; }
+
+/* ============================================
+   全局美化 — Design Tokens & Typography
+   ============================================ */
+
+/* ---- 设计令牌 ---- */
+:root {
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+    --shadow-md: 0 4px 16px rgba(0,0,0,.06);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,.08);
+    --transition-fast: 150ms cubic-bezier(.4,0,.2,1);
+    --transition-smooth: 250ms cubic-bezier(.4,0,.2,1);
+    --surface: rgba(128,128,128,.04);
+    --surface-hover: rgba(128,128,128,.08);
+    --text-primary: #1a1a2e;
+    --text-secondary: #5b5b6c;
+    --text-tertiary: #8e8e9a;
+    --accent: #3b5ccc;
+    --accent-hover: #2f4bb3;
+    --accent-light: #eef1ff;
+    --border-light: rgba(0,0,0,.06);
+    --border-medium: rgba(0,0,0,.1);
+}
+
+[data-theme="dark"] {
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
+    --shadow-md: 0 4px 16px rgba(0,0,0,.3);
+    --shadow-lg: 0 12px 40px rgba(0,0,0,.4);
+    --surface: rgba(255,255,255,.03);
+    --surface-hover: rgba(255,255,255,.06);
+    --text-primary: #e8e8ed;
+    --text-secondary: #a0a0b0;
+    --text-tertiary: #6b6b7b;
+    --accent: #6b8cff;
+    --accent-hover: #8aa4ff;
+    --accent-light: rgba(107,140,255,.12);
+    --border-light: rgba(255,255,255,.06);
+    --border-medium: rgba(255,255,255,.1);
+}
+
+/* ---- 全局排版 ---- */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+.md-content {
+    line-height: 1.75;
+    color: var(--text-primary);
+}
+
+.md-content h1 { font-size: 2rem; font-weight: 700; letter-spacing: -.02em; margin-top: 2.5rem; }
+.md-content h2 { font-size: 1.5rem; font-weight: 650; letter-spacing: -.01em; margin-top: 2rem; padding-bottom: .4rem; border-bottom: 1px solid var(--border-light); }
+.md-content h3 { font-size: 1.2rem; font-weight: 600; margin-top: 1.6rem; }
+.md-content h4 { font-size: 1.05rem; font-weight: 600; margin-top: 1.3rem; }
+
+.md-content a:not(.anchor) {
+    color: var(--accent);
+    text-decoration: none;
+    background: linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1.5px no-repeat;
+    transition: background-size var(--transition-fast);
+}
+.md-content a:not(.anchor):hover {
+    background-size: 100% 1.5px;
+}
+
+.md-content p { margin-bottom: 1.2rem; }
+.md-content li { margin-top: .3rem; }
+
+.md-content blockquote {
+    border-left: 3px solid var(--accent);
+    background: var(--surface);
+    padding: .8rem 1.2rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: 1.5rem 0;
+    color: var(--text-secondary);
+}
+
+.md-content table {
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--border-light);
+}
+.md-content table th {
+    background: var(--surface);
+    font-weight: 650;
+    padding: 10px 16px;
+}
+.md-content table td {
+    padding: 8px 16px;
+}
+.md-content table tr:not(:last-child) td {
+    border-bottom: 1px solid var(--border-light);
+}
+
+/* ---- 首页信息卡 ---- */
+.home-info .entry-content {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    max-width: 560px;
+}
+
+.first-entry {
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem;
+    margin: 2rem 0;
+    border: 1px solid var(--border-light);
+    transition: box-shadow var(--transition-smooth);
+}
+.first-entry:hover {
+    box-shadow: var(--shadow-md);
+}
+
+.first-entry .entry-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -.02em;
+}
+
+/* ---- 文章卡片 ---- */
+.post-entry {
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-md);
+    background: var(--theme);
+    padding: 1.4rem 1.5rem;
+    margin-bottom: .8rem;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+.post-entry:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent);
+}
+
+.post-entry .entry-header h2 {
+    font-size: 1.2rem;
+    font-weight: 650;
+    letter-spacing: -.01em;
+}
+
+.post-entry .entry-content {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ---- 标签 & 元信息 ---- */
+.post-tags a {
+    background: var(--surface) !important;
+    border: 1px solid var(--border-light) !important;
+    border-radius: 20px !important;
+    padding: 3px 14px !important;
+    font-size: .8rem !important;
+    color: var(--text-secondary) !important;
+    transition: all var(--transition-fast) !important;
+}
+.post-tags a:hover {
+    background: var(--accent-light) !important;
+    color: var(--accent) !important;
+    border-color: var(--accent) !important;
+}
+
+.post-meta, .breadcrumbs {
+    color: var(--text-tertiary);
+    font-size: .82rem;
+}
+
+.terms-tags a {
+    background: var(--surface) !important;
+    border-radius: var(--radius-sm) !important;
+    padding: 4px 12px !important;
+    transition: all var(--transition-fast) !important;
+}
+.terms-tags a:hover {
+    background: var(--accent-light) !important;
+    color: var(--accent) !important;
+    transform: translateY(-1px);
+}
+
+/* ---- 页脚 ---- */
+.footer {
+    color: var(--text-tertiary);
+    font-size: .8rem;
+    border-top: 1px solid var(--border-light);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* ---- 搜索 ---- */
+.searchbox input {
+    border-radius: var(--radius-md) !important;
+    border: 2px solid var(--border-medium) !important;
+    padding: 10px 16px !important;
+    font-size: .95rem !important;
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast) !important;
+    color: var(--text-primary) !important;
+    background: var(--theme) !important;
+}
+.searchbox input:focus {
+    border-color: var(--accent) !important;
+    box-shadow: 0 0 0 3px var(--accent-light) !important;
+    outline: none;
+}
+
+.searchResults li {
+    border: 1px solid var(--border-light) !important;
+    border-radius: var(--radius-md) !important;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast) !important;
+}
+.searchResults li:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* ---- 分页 ---- */
+.pagination a {
+    border-radius: var(--radius-md) !important;
+    padding: 6px 18px !important;
+    font-weight: 500 !important;
+    transition: all var(--transition-fast) !important;
+}
+.pagination a:hover {
+    background: var(--accent) !important;
+    color: #fff !important;
+}
+
+/* ---- 导航高亮 ---- */
+.menu .active {
+    color: var(--accent) !important;
+}
+
+/* ---- 滚动条 ---- */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-medium); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }
+
+/* ---- 暗色模式细节 ---- */
+[data-theme="dark"] .md-content h2 {
+    border-bottom-color: var(--border-light);
+}
+[data-theme="dark"] .post-entry {
+    background: var(--entry);
+}
+[data-theme="dark"] .md-content blockquote {
+    background: var(--surface);
+}
+
