@@ -1,444 +1,14 @@
 /* ============================================
-   笔记栏目三栏布局
-   左：文件树导航 | 中：内容 | 右：文章目录
-   ============================================ */
-
-:root {
-    --notes-sidebar-w: 260px;
-    --notes-toc-w: 220px;
-    --notes-accent: #3f51b5;
-    --notes-accent-light: #e8eaf6;
-
-    /* 白天模式代码块：浅色背景 */
-    --code-block-bg: #f6f8fa;
-    --code-bg: #f0f0f0;
-    --font-mono: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", monospace;
-}
-
-[data-theme="dark"] {
-    /* 黑夜模式代码块：深色背景 */
-    --code-block-bg: #0d1117;
-    --code-bg: #161b22;
-}
-
-/* 覆盖 PaperMod 的 720px 宽度限制，让笔记页铺满全屏 */
-body:has(.notes-layout) .main {
-    max-width: none;
-    padding: 0;
-    margin-bottom: 0 !important;
-    min-height: calc(100vh - var(--header-height));
-}
-
-/* 笔记页：header 固定 + 全宽 */
-body:has(.notes-layout) .header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--theme);
-    max-width: none;
-}
-
-body:has(.notes-layout) .header-nav {
-    max-width: none;
-    padding: 0 24px;
-}
-
-/* 笔记页面的 main 区域改为三栏 */
-.notes-layout {
-    display: flex;
-    min-height: calc(100vh - var(--header-height));
-    max-width: 100%;
-}
-
-/* ---- 左侧文件树 ---- */
-.notes-sidebar {
-    width: var(--notes-sidebar-w);
-    min-width: var(--notes-sidebar-w);
-    background: #fafafa;
-    border-right: 1px solid #e0e0e0;
-    overflow-y: auto;
-    padding: 8px 0;
-    font-size: 0.85rem;
-    position: sticky;
-    top: 60px;
-    max-height: calc(100vh - var(--header-height));
-}
-
-.notes-sidebar .sidebar-title {
-    padding: 4px 16px 12px;
-    font-size: 0.75rem;
-    color: #999;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.notes-sidebar a {
-    display: flex;
-    align-items: center;
-    padding: 5px 12px;
-    color: #555;
-    text-decoration: none;
-    font-size: 0.85rem;
-    border-left: 3px solid transparent;
-    transition: all 0.15s;
-}
-
-.notes-sidebar a:hover {
-    background: var(--notes-accent-light);
-    color: #333;
-}
-
-.notes-sidebar a.active {
-    color: var(--notes-accent);
-    background: var(--notes-accent-light);
-    border-left-color: var(--notes-accent);
-    font-weight: 600;
-}
-
-.notes-sidebar .nav-section > a {
-    font-weight: 600;
-    color: #333;
-}
-
-.notes-sidebar .nav-toggle {
-    font-size: 0.6rem;
-    margin-right: 6px;
-    min-width: 12px;
-    text-align: center;
-    cursor: pointer;
-    user-select: none;
-    transition: transform 0.15s;
-}
-
-.notes-sidebar .nav-section.collapsed > .nav-children {
-    display: none;
-}
-
-.notes-sidebar .nav-section.collapsed > a .nav-toggle {
-    transform: rotate(-90deg);
-}
-
-/* 层级缩进 */
-.notes-sidebar .level-0 { padding-left: 12px; }
-.notes-sidebar .level-1 { padding-left: 28px; font-size: 0.82rem; }
-.notes-sidebar .level-2 { padding-left: 44px; font-size: 0.8rem; }
-.notes-sidebar .level-3 { padding-left: 58px; font-size: 0.78rem; }
-
-/* ---- 中间内容区 ---- */
-.notes-content {
-    flex: 1;
-    min-width: 0;
-    padding: 20px 32px;
-    overflow-y: auto;
-}
-
-.notes-content .post-single {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* ---- 右侧文章目录 ---- */
-.notes-toc {
-    width: var(--notes-toc-w);
-    min-width: var(--notes-toc-w);
-    border-left: 1px solid #e0e0e0;
-    overflow-y: auto;
-    padding: 16px 12px;
-    font-size: 0.82rem;
-    background: #fafafa;
-    position: sticky;
-    top: 60px;
-    max-height: calc(100vh - 120px);
-}
-
-.notes-toc .toc-label {
-    font-size: 0.75rem;
-    color: #999;
-    font-weight: 600;
-    margin-bottom: 8px;
-}
-
-.notes-toc nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.notes-toc nav li {
-    margin: 0;
-}
-
-.notes-toc nav a {
-    display: block;
-    color: #666;
-    text-decoration: none;
-    padding: 3px 0 3px 8px;
-    border-left: 2px solid transparent;
-    transition: all 0.15s;
-}
-
-.notes-toc nav a:hover {
-    color: var(--notes-accent);
-    border-left-color: var(--notes-accent);
-}
-
-.notes-toc nav ul ul a {
-    padding-left: 20px;
-    font-size: 0.78rem;
-}
-
-.notes-toc nav ul ul ul a {
-    padding-left: 32px;
-    font-size: 0.74rem;
-}
-
-/* TOC 折叠展开 */
-.notes-toc .toc-toggle {
-    font-size: 0.55rem;
-    margin-right: 4px;
-    cursor: pointer;
-    user-select: none;
-    display: inline-block;
-    transition: transform 0.15s;
-}
-.notes-toc .toc-section.collapsed .toc-children {
-    display: none;
-}
-.notes-toc .toc-section.collapsed > a .toc-toggle {
-    transform: rotate(-90deg);
-}
-
-/* 手机端适配 */
-@media (max-width: 900px) {
-    .notes-sidebar {
-        display: none;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        bottom: 0;
-        z-index: 90;
-        box-shadow: 2px 0 8px rgba(0,0,0,0.15);
-    }
-    .notes-sidebar.open {
-        display: block;
-    }
-    .notes-toc {
-        display: none;
-    }
-    .notes-content {
-        padding: 16px;
-    }
-}
-
-/* 暗色模式适配 */
-[data-theme="dark"] .notes-sidebar,
-[data-theme="dark"] .notes-toc {
-    background: var(--entry);
-    border-color: var(--border);
-}
-
-[data-theme="dark"] .notes-sidebar a,
-[data-theme="dark"] .notes-toc a {
-    color: var(--secondary);
-}
-
-[data-theme="dark"] .notes-sidebar a:hover,
-[data-theme="dark"] .notes-toc a:hover {
-    color: var(--primary);
-    background: rgba(255,255,255,0.05);
-}
-
-[data-theme="dark"] .notes-sidebar .nav-section > a {
-    color: var(--primary);
-}
-
-/* 侧边栏切换按钮 (手机端) */
-.notes-sidebar-toggle {
-    display: none;
-    position: fixed;
-    bottom: 24px;
-    left: 16px;
-    z-index: 100;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: var(--notes-accent);
-    color: #fff;
-    border: none;
-    font-size: 1.2rem;
-    cursor: pointer;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.2);
-}
-
-@media (max-width: 900px) {
-    .notes-sidebar-toggle {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-/* ===== 代码块字体 ===== */
-code, pre, .md-content code, .md-content pre,
-.chroma code, .chroma pre, .highlight code, .highlight pre,
-code[class*="language-"], pre[class*="language-"] {
-    font-family: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace !important;
-}
-
-/* ============================================
-   代码块配色 — Typora GitHub 主题
-   白天：GitHub 浅色  /  黑夜：GitHub Dark
-   ============================================ */
-
-/* ---- 通用背景 ---- */
-.chroma { color: #24292f; background-color: var(--code-block-bg) !important; }
-.bg    { background-color: var(--code-block-bg) !important; }
-
-/* ---- 白天模式：Typora GitHub 配色 ---- */
-/* 注释 (Comment) */
-.chroma .c, .chroma .c1, .chroma .ch, .chroma .cm,
-.chroma .cp, .chroma .cpf, .chroma .cs { color: #6a737d; font-style: italic; }
-
-/* 关键字 (Keyword) */
-.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn,
-.chroma .kp, .chroma .kr, .chroma .kt { color: #d73a49; }
-
-/* 字符串 (String) */
-.chroma .s, .chroma .s1, .chroma .s2, .chroma .sa,
-.chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd,
-.chroma .se, .chroma .sh, .chroma .si, .chroma .sx,
-.chroma .sr, .chroma .ss { color: #032f62; }
-
-/* 数字 (Number) */
-.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh,
-.chroma .mi, .chroma .il, .chroma .mo { color: #005cc5; }
-
-/* 运算符 (Operator) */
-.chroma .o, .chroma .ow, .chroma .or { color: #d73a49; }
-
-/* 函数/类名 (Name Function / Name Class) */
-.chroma .nf, .chroma .fm, .chroma .nc { color: #6f42c1; }
-
-/* 内置/标签/属性 (Name Builtin / Name Tag / Name Attribute) */
-.chroma .nb, .chroma .bp, .chroma .nt, .chroma .na,
-.chroma .nd, .chroma .ni, .chroma .nl, .chroma .nn,
-.chroma .no, .chroma .nx, .chroma .ne, .chroma .py { color: #24292f; }
-
-/* 变量名 (Name Variable) — Typora GitHub 保持默认深色 */
-.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi,
-.chroma .vm { color: #24292f; }
-
-/* 泛型/删除/插入/加粗 */
-.chroma .gd { color: #b31d28; background-color: #ffeef0; }
-.chroma .ge { font-style: italic; }
-.chroma .gi { color: #22863a; background-color: #f0fff4; }
-.chroma .gs { font-weight: 700; }
-.chroma .gu { color: #005cc5; font-weight: 700; }
-.chroma .gl { text-decoration: underline; }
-.chroma .go { color: #24292f; }
-.chroma .gr { color: #d73a49; }
-.chroma .gh { color: #005cc5; font-weight: 700; }
-.chroma .gt { color: #d73a49; }
-.chroma .w  { color: #fff; }
-
-/* 错误 */
-.chroma .err { color: #24292f; background-color: #ffeef0; }
-
-/* 行号 */
-.chroma .lnt, .chroma .ln { color: #959da5; }
-.chroma .hl { background-color: #fffbdd; }
-.chroma .lntd { vertical-align: top; }
-
-/* ---- 黑夜模式 ---- */
-[data-theme="dark"] .chroma { color: #e6edf3; background-color: var(--code-block-bg) !important; }
-[data-theme="dark"] .bg    { background-color: var(--code-block-bg) !important; }
-
-[data-theme="dark"] .chroma .c,
-[data-theme="dark"] .chroma .c1,
-[data-theme="dark"] .chroma .ch,
-[data-theme="dark"] .chroma .cm,
-[data-theme="dark"] .chroma .cp,
-[data-theme="dark"] .chroma .cpf,
-[data-theme="dark"] .chroma .cs { color: #8b949e; font-style: italic; }
-
-[data-theme="dark"] .chroma .k,
-[data-theme="dark"] .chroma .kc,
-[data-theme="dark"] .chroma .kd,
-[data-theme="dark"] .chroma .kn,
-[data-theme="dark"] .chroma .kp,
-[data-theme="dark"] .chroma .kr { color: #ff7b72; }
-
-[data-theme="dark"] .chroma .s,
-[data-theme="dark"] .chroma .s1,
-[data-theme="dark"] .chroma .s2,
-[data-theme="dark"] .chroma .sa,
-[data-theme="dark"] .chroma .sb,
-[data-theme="dark"] .chroma .sc,
-[data-theme="dark"] .chroma .dl,
-[data-theme="dark"] .chroma .sd,
-[data-theme="dark"] .chroma .se,
-[data-theme="dark"] .chroma .sh,
-[data-theme="dark"] .chroma .si,
-[data-theme="dark"] .chroma .sx,
-[data-theme="dark"] .chroma .sr,
-[data-theme="dark"] .chroma .ss { color: #a5d6ff; }
-
-[data-theme="dark"] .chroma .m,
-[data-theme="dark"] .chroma .mb,
-[data-theme="dark"] .chroma .mf,
-[data-theme="dark"] .chroma .mh,
-[data-theme="dark"] .chroma .mi,
-[data-theme="dark"] .chroma .il,
-[data-theme="dark"] .chroma .mo { color: #79c0ff; }
-
-[data-theme="dark"] .chroma .o,
-[data-theme="dark"] .chroma .ow,
-[data-theme="dark"] .chroma .or { color: #ff7b72; }
-
-[data-theme="dark"] .chroma .nf,
-[data-theme="dark"] .chroma .fm,
-[data-theme="dark"] .chroma .nc { color: #d2a8ff; }
-
-[data-theme="dark"] .chroma .nb,
-[data-theme="dark"] .chroma .bp { color: #ffa657; }
-
-[data-theme="dark"] .chroma .nt { color: #7ee787; }
-
-[data-theme="dark"] .chroma .nv,
-[data-theme="dark"] .chroma .vc,
-[data-theme="dark"] .chroma .vg,
-[data-theme="dark"] .chroma .vi,
-[data-theme="dark"] .chroma .vm { color: #79c0ff; }
-
-[data-theme="dark"] .chroma .na,
-[data-theme="dark"] .chroma .nc,
-[data-theme="dark"] .chroma .nd,
-[data-theme="dark"] .chroma .ne,
-[data-theme="dark"] .chroma .ni,
-[data-theme="dark"] .chroma .nl,
-[data-theme="dark"] .chroma .nn,
-[data-theme="dark"] .chroma .no,
-[data-theme="dark"] .chroma .nx { color: #d2a8ff; }
-
-[data-theme="dark"] .chroma .gd { color: #ffdcd7; background-color: #490202; }
-[data-theme="dark"] .chroma .gi { color: #aff5b4; background-color: #033a16; }
-[data-theme="dark"] .chroma .lnt,
-[data-theme="dark"] .chroma .ln  { color: #6e7681; }
-
-/* 通用：覆盖 PaperMod chroma-mod.css 的干扰 */
-.chroma { background-color: var(--code-block-bg) !important; }
-
-/* 通用：覆盖 PaperMod md-content.css 中 .md-content pre code { color: rgb(213,213,214) } 的浅色文字，
-   否则白天模式下浅色背景上变量名（class=n 继承自 code）几乎不可见 */
-.md-content pre code { color: inherit; }
-
-/* ============================================
-   全局美化 — Design Tokens & Typography
+   博客全局美化
    ============================================ */
 
 /* ---- 设计令牌 ---- */
 :root {
+    /* 白天模式代码块 */
+    --code-block-bg: #f6f8fa;
+    --code-bg: #f0f0f0;
+    --font-mono: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", monospace;
+
     --radius-sm: 6px;
     --radius-md: 10px;
     --radius-lg: 16px;
@@ -460,6 +30,8 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 [data-theme="dark"] {
+    --code-block-bg: #0d1117;
+    --code-bg: #161b22;
     --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
     --shadow-md: 0 4px 16px rgba(0,0,0,.3);
     --shadow-lg: 0 12px 40px rgba(0,0,0,.4);
@@ -622,10 +194,6 @@ body {
     font-size: .8rem;
 }
 
-/* 笔记页：隐藏全局 .footer（Powered by Hugo & PaperMod），
-   避免在三栏布局外形成一条与顶部 header 同宽同色的多余空白横栏 */
-body:has(.notes-layout) .footer { display: none !important; }
-
 /* ---- 搜索 ---- */
 .searchbox input {
     border-radius: var(--radius-md) !important;
@@ -664,7 +232,7 @@ body:has(.notes-layout) .footer { display: none !important; }
     color: #fff !important;
 }
 
-/* ---- 导航高亮 ---- */
+/* ---- 导航 ---- */
 .menu .active {
     color: var(--accent) !important;
 }
@@ -675,14 +243,146 @@ body:has(.notes-layout) .footer { display: none !important; }
 ::-webkit-scrollbar-thumb { background: var(--border-medium); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }
 
-/* ---- 暗色模式细节 ---- */
-[data-theme="dark"] .md-content h2 {
-    border-bottom-color: var(--border-light);
-}
-[data-theme="dark"] .post-entry {
-    background: var(--entry);
-}
-[data-theme="dark"] .md-content blockquote {
-    background: var(--surface);
+/* ===== 代码块字体 ===== */
+code, pre, .md-content code, .md-content pre,
+.chroma code, .chroma pre, .highlight code, .highlight pre,
+code[class*="language-"], pre[class*="language-"] {
+    font-family: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace !important;
 }
 
+/* ============================================
+   代码块配色 — Typora GitHub 主题
+   ============================================ */
+
+.chroma { color: #24292f; background-color: var(--code-block-bg) !important; }
+.bg    { background-color: var(--code-block-bg) !important; }
+
+/* 注释 */
+.chroma .c, .chroma .c1, .chroma .ch, .chroma .cm,
+.chroma .cp, .chroma .cpf, .chroma .cs { color: #6a737d; font-style: italic; }
+
+/* 关键字 */
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn,
+.chroma .kp, .chroma .kr, .chroma .kt { color: #d73a49; }
+
+/* 字符串 */
+.chroma .s, .chroma .s1, .chroma .s2, .chroma .sa,
+.chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd,
+.chroma .se, .chroma .sh, .chroma .si, .chroma .sx,
+.chroma .sr, .chroma .ss { color: #032f62; }
+
+/* 数字 */
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh,
+.chroma .mi, .chroma .il, .chroma .mo { color: #005cc5; }
+
+/* 运算符 */
+.chroma .o, .chroma .ow, .chroma .or { color: #d73a49; }
+
+/* 函数/类 */
+.chroma .nf, .chroma .fm, .chroma .nc { color: #6f42c1; }
+
+/* 变量/内置/属性 */
+.chroma .nb, .chroma .bp, .chroma .nt, .chroma .na,
+.chroma .nd, .chroma .ni, .chroma .nl, .chroma .nn,
+.chroma .no, .chroma .nx, .chroma .ne, .chroma .py,
+.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi,
+.chroma .vm { color: #24292f; }
+
+/* 泛型/特殊 */
+.chroma .gd { color: #b31d28; background-color: #ffeef0; }
+.chroma .ge { font-style: italic; }
+.chroma .gi { color: #22863a; background-color: #f0fff4; }
+.chroma .gs { font-weight: 700; }
+.chroma .gu { color: #005cc5; font-weight: 700; }
+.chroma .gl { text-decoration: underline; }
+.chroma .go { color: #24292f; }
+.chroma .gr { color: #d73a49; }
+.chroma .gh { color: #005cc5; font-weight: 700; }
+.chroma .gt { color: #d73a49; }
+.chroma .w  { color: #fff; }
+.chroma .err { color: #24292f; background-color: #ffeef0; }
+
+/* 行号 */
+.chroma .lnt, .chroma .ln { color: #959da5; }
+.chroma .hl { background-color: #fffbdd; }
+.chroma .lntd { vertical-align: top; }
+
+/* ---- 黑夜模式代码 ---- */
+[data-theme="dark"] .chroma { color: #e6edf3; background-color: var(--code-block-bg) !important; }
+[data-theme="dark"] .bg    { background-color: var(--code-block-bg) !important; }
+
+[data-theme="dark"] .chroma .c,
+[data-theme="dark"] .chroma .c1,
+[data-theme="dark"] .chroma .ch,
+[data-theme="dark"] .chroma .cm,
+[data-theme="dark"] .chroma .cp,
+[data-theme="dark"] .chroma .cpf,
+[data-theme="dark"] .chroma .cs { color: #8b949e; font-style: italic; }
+
+[data-theme="dark"] .chroma .k,
+[data-theme="dark"] .chroma .kc,
+[data-theme="dark"] .chroma .kd,
+[data-theme="dark"] .chroma .kn,
+[data-theme="dark"] .chroma .kp,
+[data-theme="dark"] .chroma .kr { color: #ff7b72; }
+
+[data-theme="dark"] .chroma .s,
+[data-theme="dark"] .chroma .s1,
+[data-theme="dark"] .chroma .s2,
+[data-theme="dark"] .chroma .sa,
+[data-theme="dark"] .chroma .sb,
+[data-theme="dark"] .chroma .sc,
+[data-theme="dark"] .chroma .dl,
+[data-theme="dark"] .chroma .sd,
+[data-theme="dark"] .chroma .se,
+[data-theme="dark"] .chroma .sh,
+[data-theme="dark"] .chroma .si,
+[data-theme="dark"] .chroma .sx,
+[data-theme="dark"] .chroma .sr,
+[data-theme="dark"] .chroma .ss { color: #a5d6ff; }
+
+[data-theme="dark"] .chroma .m,
+[data-theme="dark"] .chroma .mb,
+[data-theme="dark"] .chroma .mf,
+[data-theme="dark"] .chroma .mh,
+[data-theme="dark"] .chroma .mi,
+[data-theme="dark"] .chroma .il,
+[data-theme="dark"] .chroma .mo { color: #79c0ff; }
+
+[data-theme="dark"] .chroma .o,
+[data-theme="dark"] .chroma .ow,
+[data-theme="dark"] .chroma .or { color: #ff7b72; }
+
+[data-theme="dark"] .chroma .nf,
+[data-theme="dark"] .chroma .fm,
+[data-theme="dark"] .chroma .nc { color: #d2a8ff; }
+
+[data-theme="dark"] .chroma .nb,
+[data-theme="dark"] .chroma .bp { color: #ffa657; }
+
+[data-theme="dark"] .chroma .nt { color: #7ee787; }
+
+[data-theme="dark"] .chroma .nv,
+[data-theme="dark"] .chroma .vc,
+[data-theme="dark"] .chroma .vg,
+[data-theme="dark"] .chroma .vi,
+[data-theme="dark"] .chroma .vm { color: #79c0ff; }
+
+[data-theme="dark"] .chroma .na,
+[data-theme="dark"] .chroma .nc,
+[data-theme="dark"] .chroma .nd,
+[data-theme="dark"] .chroma .ne,
+[data-theme="dark"] .chroma .ni,
+[data-theme="dark"] .chroma .nl,
+[data-theme="dark"] .chroma .nn,
+[data-theme="dark"] .chroma .no,
+[data-theme="dark"] .chroma .nx { color: #d2a8ff; }
+
+[data-theme="dark"] .chroma .gd { color: #ffdcd7; background-color: #490202; }
+[data-theme="dark"] .chroma .gi { color: #aff5b4; background-color: #033a16; }
+[data-theme="dark"] .chroma .lnt,
+[data-theme="dark"] .chroma .ln  { color: #6e7681; }
+
+/* 覆盖 PaperMod 默认代码颜色 */
+.chroma { background-color: var(--code-block-bg) !important; }
+.md-content pre code { color: inherit; }
