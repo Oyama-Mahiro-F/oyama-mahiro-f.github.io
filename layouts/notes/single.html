@@ -61,20 +61,21 @@
   const toc = document.getElementById('TableOfContents');
   if (toc) {
     toc.querySelectorAll('li').forEach(li => {
-      const subUl = li.querySelector('ul');
-      if (subUl) {
-        li.classList.add('toc-section');
+      const childUl = Array.from(li.children).find(c => c.tagName === 'UL');
+      if (!childUl) return;
+      li.classList.add('toc-section');
+      childUl.classList.add('toc-children');
+      const anchor = li.querySelector(':scope > a');
+      if (anchor) {
         const toggle = document.createElement('span');
         toggle.className = 'toc-toggle';
         toggle.textContent = '▼';
-        toggle.addEventListener('click', function(e) {
+        toggle.onclick = function(e) {
           e.preventDefault();
           e.stopPropagation();
           li.classList.toggle('collapsed');
-        });
-        const anchor = li.querySelector('a');
-        if (anchor) anchor.prepend(toggle);
-        subUl.classList.add('toc-children');
+        };
+        anchor.prepend(toggle);
       }
     });
   }
