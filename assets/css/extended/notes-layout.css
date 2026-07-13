@@ -390,6 +390,18 @@ code[class*="language-"], pre[class*="language-"] {
 /* ============================================
 
 /* ===== 笔记页全屏三栏（匹配原 site 效果） ===== */
+/* header 与侧栏/内容区区分 */
+body:has(.notes-body) .header {
+    background: var(--accent);
+}
+body:has(.notes-body) .header a,
+body:has(.notes-body) .header .logo a {
+    color: #fff;
+}
+body:has(.notes-body) .header .menu .active {
+    color: #fff !important;
+    text-decoration-color: #fff;
+}
 body:has(.notes-body) {
     overflow: hidden;
 }
