@@ -391,14 +391,16 @@ code[class*="language-"], pre[class*="language-"] {
    笔记页三栏布局（内容区内，不影响全局 header/footer）
    ============================================ */
 
-/* 笔记页放宽内容宽度，让三栏有足够空间 */
+/* 笔记页铺满全宽 */
 body:has(.notes-body) .main {
-    max-width: calc(100% - var(--gap) * 2);
+    max-width: none;
+    padding: 0;
 }
 
 .notes-body {
     display: flex;
     gap: 0;
+    padding: 0 16px;
 }
 
 /* ---- 左侧文件树 ---- */
