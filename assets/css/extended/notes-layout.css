@@ -501,3 +501,98 @@ body:has(.notes-body) #top-link {
     .notes-sidebar, .notes-toc { display: none; }
     .notes-content { padding: 16px; overflow: visible; }
 }
+
+/* ===== Stack Pub 风格 ===== */
+
+/* 首页品牌区 */
+.first-entry {
+    background: linear-gradient(135deg, #3b5ccc 0%, #6b8cff 50%, #a78bfa 100%);
+    border: none;
+    border-radius: var(--radius-lg);
+    padding: 3.5rem 2rem;
+    margin: 1rem 0 2rem;
+    color: #fff;
+    text-align: center;
+}
+.first-entry .entry-header h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    letter-spacing: -.03em;
+    color: #fff;
+}
+.first-entry .entry-header h2 {
+    color: rgba(255,255,255,.85);
+    font-weight: 400;
+}
+.first-entry .entry-content {
+    color: rgba(255,255,255,.75);
+    font-size: 1.05rem;
+}
+.first-entry .entry-footer,
+.first-entry .entry-footer a,
+.first-entry .social-icons a {
+    color: rgba(255,255,255,.7);
+}
+
+/* 品牌区呼吸动画 */
+@keyframes brandPulse {
+    0%, 100% { box-shadow: 0 4px 24px rgba(59,92,204,.15); }
+    50% { box-shadow: 0 8px 40px rgba(59,92,204,.3); }
+}
+.first-entry {
+    animation: brandPulse 4s ease-in-out infinite;
+}
+
+/* 首页标题优化 */
+.home-info .entry-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* header 全局改为白色背景 + 底部阴影 */
+.header {
+    background: rgba(255,255,255,.92) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,0,0,.06);
+    box-shadow: 0 1px 4px rgba(0,0,0,.04);
+}
+[data-theme="dark"] .header {
+    background: rgba(13,17,23,.92) !important;
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
+
+/* 首页全宽 hero */
+body.list .main {
+    max-width: none;
+    padding: 0;
+}
+body.list .first-entry {
+    border-radius: 0;
+    margin: 0 0 2rem;
+    padding: 4rem 2rem;
+}
+body.list .main > *:not(.first-entry) {
+    max-width: calc(var(--main-width) + var(--gap) * 2);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+}
+
+/* 加载淡入 */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.post-entry {
+    animation: fadeInUp .5s ease both;
+}
+.post-entry:nth-child(1) { animation-delay: .05s; }
+.post-entry:nth-child(2) { animation-delay: .1s; }
+.post-entry:nth-child(3) { animation-delay: .15s; }
+.post-entry:nth-child(4) { animation-delay: .2s; }
+.post-entry:nth-child(5) { animation-delay: .25s; }
+.post-entry:nth-child(6) { animation-delay: .3s; }
+.post-entry:nth-child(7) { animation-delay: .35s; }
+.post-entry:nth-child(8) { animation-delay: .4s; }
