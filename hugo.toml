@@ -77,10 +77,6 @@ paginate = 8
   weight = 10
 
 [[menu.main]]
-  identifier = 'notes'
-  name = '笔记'
-  url = 'https://oyama-mahiro-f.github.io/11408-notes-web/'
-  weight = 15
 
 [[menu.main]]
   identifier = 'tags'
@@ -105,9 +101,4 @@ paginate = 8
   name = '关于'
   url = '/about/'
   weight = 50
-
-[outputs]
-  home = ["HTML", "JSON"]
-  section = ["HTML"]
-  page = ["HTML"]
 
