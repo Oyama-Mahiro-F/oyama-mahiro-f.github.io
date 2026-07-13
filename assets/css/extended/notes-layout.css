@@ -620,6 +620,10 @@ body {
     font-size: .8rem;
 }
 
+/* 笔记页：隐藏全局 .footer（Powered by Hugo & PaperMod），
+   避免在三栏布局外形成一条与顶部 header 同宽同色的多余空白横栏 */
+body:has(.notes-layout) .footer { display: none; }
+
 /* ---- 搜索 ---- */
 .searchbox input {
     border-radius: var(--radius-md) !important;
