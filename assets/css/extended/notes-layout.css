@@ -10,61 +10,16 @@
     --notes-accent-light: #e8eaf6;
 
     /* 白天模式代码块：浅色背景 */
-    --code-block-bg: #f8f8f8;
+    --code-block-bg: #f6f8fa;
     --code-bg: #f0f0f0;
-    --hljs-bg: #f8f8f8;
-    --hljs-color: #24292e;
     --font-mono: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", monospace;
 }
 
 [data-theme="dark"] {
     /* 黑夜模式代码块：深色背景 */
-    --code-block-bg: #1e1e1e;
-    --code-bg: #2d2d2d;
-    --hljs-bg: #1e1e1e;
-    --hljs-color: #e6e6e6;
+    --code-block-bg: #0d1117;
+    --code-bg: #161b22;
 }
-
-/* 深色模式下 GitHub 高亮主题颜色适配 */
-[data-theme="dark"] .chroma .c,
-[data-theme="dark"] .chroma .c1,
-[data-theme="dark"] .chroma .cm,
-[data-theme="dark"] .chroma .cp,
-[data-theme="dark"] .chroma .cs { color: #8b949e; } /* 注释 */
-[data-theme="dark"] .chroma .k,
-[data-theme="dark"] .chroma .kc,
-[data-theme="dark"] .chroma .kd,
-[data-theme="dark"] .chroma .kn,
-[data-theme="dark"] .chroma .kr { color: #ff7b72; } /* 关键字 */
-[data-theme="dark"] .chroma .na,
-[data-theme="dark"] .chroma .nc,
-[data-theme="dark"] .chroma .nd,
-[data-theme="dark"] .chroma .ne,
-[data-theme="dark"] .chroma .nf,
-[data-theme="dark"] .chroma .nx { color: #d2a8ff; } /* 函数/类名 */
-[data-theme="dark"] .chroma .s,
-[data-theme="dark"] .chroma .sa,
-[data-theme="dark"] .chroma .sb,
-[data-theme="dark"] .chroma .sc,
-[data-theme="dark"] .chroma .dl,
-[data-theme="dark"] .chroma .s1,
-[data-theme="dark"] .chroma .s2 { color: #a5d6ff; } /* 字符串 */
-[data-theme="dark"] .chroma .m,
-[data-theme="dark"] .chroma .mb,
-[data-theme="dark"] .chroma .mf,
-[data-theme="dark"] .chroma .mh,
-[data-theme="dark"] .chroma .mi,
-[data-theme="dark"] .chroma .il,
-[data-theme="dark"] .chroma .mo { color: #79c0ff; } /* 数字 */
-[data-theme="dark"] .chroma .o,
-[data-theme="dark"] .chroma .ow { color: #ff7b72; } /* 运算符 */
-[data-theme="dark"] .chroma .nb,
-[data-theme="dark"] .chroma .bp { color: #ffa657; } /* 内置 */
-[data-theme="dark"] .chroma .nt { color: #7ee787; } /* 标签 */
-[data-theme="dark"] .chroma .nv,
-[data-theme="dark"] .chroma .vc,
-[data-theme="dark"] .chroma .vg,
-[data-theme="dark"] .chroma .vi { color: #79c0ff; } /* 变量 */
 
 /* 覆盖 PaperMod 的 720px 宽度限制，让笔记页铺满全屏 */
 body:has(.notes-layout) .main {
@@ -329,89 +284,145 @@ code[class*="language-"], pre[class*="language-"] {
     font-family: "Consolas", "SF Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace !important;
 }
 
-/* ===== GitHub 语法高亮 (白天模式) ===== */
-/* Generated using: hugo gen chromastyles --style=github */
+/* ============================================
+   代码块配色 — Typora GitHub 主题
+   白天：GitHub 浅色  /  黑夜：GitHub Dark
+   ============================================ */
 
-/* Background */ .bg { background-color:#f7f7f7; }
-/* PreWrapper */ .chroma { background-color:#f7f7f7;-webkit-text-size-adjust:none; }
-/* Error */ .chroma .err { color:#f6f8fa;background-color:#82071e }
-/* LineLink */ .chroma .lnlinks { outline:none;text-decoration:none;color:inherit }
-/* LineTableTD */ .chroma .lntd { vertical-align:top;padding:0;margin:0;border:0; }
-/* LineTable */ .chroma .lntable { border-spacing:0;padding:0;margin:0;border:0; }
-/* LineHighlight */ .chroma .hl { background-color:#dedede }
-/* LineNumbersTable */ .chroma .lnt { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f }
-/* LineNumbers */ .chroma .ln { white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f }
-/* Line */ .chroma .line { display:flex; }
-/* Keyword */ .chroma .k { color:#cf222e }
-/* KeywordConstant */ .chroma .kc { color:#cf222e }
-/* KeywordDeclaration */ .chroma .kd { color:#cf222e }
-/* KeywordNamespace */ .chroma .kn { color:#cf222e }
-/* KeywordPseudo */ .chroma .kp { color:#cf222e }
-/* KeywordReserved */ .chroma .kr { color:#cf222e }
-/* KeywordType */ .chroma .kt { color:#cf222e }
-/* NameAttribute */ .chroma .na { color:#1f2328 }
-/* NameClass */ .chroma .nc { color:#1f2328 }
-/* NameConstant */ .chroma .no { color:#0550ae }
-/* NameDecorator */ .chroma .nd { color:#0550ae }
-/* NameEntity */ .chroma .ni { color:#6639ba }
-/* NameLabel */ .chroma .nl { color:#900;font-weight:bold }
-/* NameNamespace */ .chroma .nn { color:#24292e }
-/* NameOther */ .chroma .nx { color:#1f2328 }
-/* NameTag */ .chroma .nt { color:#0550ae }
-/* NameBuiltin */ .chroma .nb { color:#6639ba }
-/* NameBuiltinPseudo */ .chroma .bp { color:#6a737d }
-/* NameVariable */ .chroma .nv { color:#953800 }
-/* NameVariableClass */ .chroma .vc { color:#953800 }
-/* NameVariableGlobal */ .chroma .vg { color:#953800 }
-/* NameVariableInstance */ .chroma .vi { color:#953800 }
-/* NameVariableMagic */ .chroma .vm { color:#953800 }
-/* NameFunction */ .chroma .nf { color:#6639ba }
-/* NameFunctionMagic */ .chroma .fm { color:#6639ba }
-/* LiteralString */ .chroma .s { color:#0a3069 }
-/* LiteralStringAffix */ .chroma .sa { color:#0a3069 }
-/* LiteralStringBacktick */ .chroma .sb { color:#0a3069 }
-/* LiteralStringChar */ .chroma .sc { color:#0a3069 }
-/* LiteralStringDelimiter */ .chroma .dl { color:#0a3069 }
-/* LiteralStringDoc */ .chroma .sd { color:#0a3069 }
-/* LiteralStringDouble */ .chroma .s2 { color:#0a3069 }
-/* LiteralStringEscape */ .chroma .se { color:#0a3069 }
-/* LiteralStringHeredoc */ .chroma .sh { color:#0a3069 }
-/* LiteralStringInterpol */ .chroma .si { color:#0a3069 }
-/* LiteralStringOther */ .chroma .sx { color:#0a3069 }
-/* LiteralStringRegex */ .chroma .sr { color:#0a3069 }
-/* LiteralStringSingle */ .chroma .s1 { color:#0a3069 }
-/* LiteralStringSymbol */ .chroma .ss { color:#032f62 }
-/* LiteralNumber */ .chroma .m { color:#0550ae }
-/* LiteralNumberBin */ .chroma .mb { color:#0550ae }
-/* LiteralNumberFloat */ .chroma .mf { color:#0550ae }
-/* LiteralNumberHex */ .chroma .mh { color:#0550ae }
-/* LiteralNumberInteger */ .chroma .mi { color:#0550ae }
-/* LiteralNumberIntegerLong */ .chroma .il { color:#0550ae }
-/* LiteralNumberOct */ .chroma .mo { color:#0550ae }
-/* Operator */ .chroma .o { color:#0550ae }
-/* OperatorWord */ .chroma .ow { color:#0550ae }
-/* OperatorReserved */ .chroma .or { color:#0550ae }
-/* Punctuation */ .chroma .p { color:#1f2328 }
-/* Comment */ .chroma .c { color:#57606a }
-/* CommentHashbang */ .chroma .ch { color:#57606a }
-/* CommentMultiline */ .chroma .cm { color:#57606a }
-/* CommentSingle */ .chroma .c1 { color:#57606a }
-/* CommentSpecial */ .chroma .cs { color:#57606a }
-/* CommentPreproc */ .chroma .cp { color:#57606a }
-/* CommentPreprocFile */ .chroma .cpf { color:#57606a }
-/* GenericDeleted */ .chroma .gd { color:#82071e;background-color:#ffebe9 }
-/* GenericEmph */ .chroma .ge { color:#1f2328 }
-/* GenericInserted */ .chroma .gi { color:#116329;background-color:#dafbe1 }
-/* GenericOutput */ .chroma .go { color:#1f2328 }
-/* GenericUnderline */ .chroma .gl { text-decoration:underline }
-/* TextWhitespace */ .chroma .w { color:#fff }
-
-/* chroma：背景 + 默认文字颜色（覆盖 Monokai #cad3f5 浅灰） */
+/* ---- 通用背景 ---- */
 .chroma { color: #24292f; background-color: var(--code-block-bg) !important; }
-.bg { background-color: var(--code-block-bg) !important; }
-[data-theme="dark"] .chroma { color: #e6edf3; background-color: var(--code-block-bg) !important; }
-[data-theme="dark"] .bg { background-color: var(--code-block-bg) !important; }
+.bg    { background-color: var(--code-block-bg) !important; }
 
-/* 白天模式：覆盖 Monokai 残留的浅色类（GitHub Chroma 未覆盖到的 Name 类） */
-.chroma .ne,
-.chroma .py { color: #24292f; }
+/* ---- 白天模式：Typora GitHub 配色 ---- */
+/* 注释 (Comment) */
+.chroma .c, .chroma .c1, .chroma .ch, .chroma .cm,
+.chroma .cp, .chroma .cpf, .chroma .cs { color: #6a737d; font-style: italic; }
+
+/* 关键字 (Keyword) */
+.chroma .k, .chroma .kc, .chroma .kd, .chroma .kn,
+.chroma .kp, .chroma .kr, .chroma .kt { color: #d73a49; }
+
+/* 字符串 (String) */
+.chroma .s, .chroma .s1, .chroma .s2, .chroma .sa,
+.chroma .sb, .chroma .sc, .chroma .dl, .chroma .sd,
+.chroma .se, .chroma .sh, .chroma .si, .chroma .sx,
+.chroma .sr, .chroma .ss { color: #032f62; }
+
+/* 数字 (Number) */
+.chroma .m, .chroma .mb, .chroma .mf, .chroma .mh,
+.chroma .mi, .chroma .il, .chroma .mo { color: #005cc5; }
+
+/* 运算符 (Operator) */
+.chroma .o, .chroma .ow, .chroma .or { color: #d73a49; }
+
+/* 函数/类名 (Name Function / Name Class) */
+.chroma .nf, .chroma .fm, .chroma .nc { color: #6f42c1; }
+
+/* 内置/标签/属性 (Name Builtin / Name Tag / Name Attribute) */
+.chroma .nb, .chroma .bp, .chroma .nt, .chroma .na,
+.chroma .nd, .chroma .ni, .chroma .nl, .chroma .nn,
+.chroma .no, .chroma .nx, .chroma .ne, .chroma .py { color: #24292f; }
+
+/* 变量名 (Name Variable) — Typora GitHub 保持默认深色 */
+.chroma .nv, .chroma .vc, .chroma .vg, .chroma .vi,
+.chroma .vm { color: #24292f; }
+
+/* 泛型/删除/插入/加粗 */
+.chroma .gd { color: #b31d28; background-color: #ffeef0; }
+.chroma .ge { font-style: italic; }
+.chroma .gi { color: #22863a; background-color: #f0fff4; }
+.chroma .gs { font-weight: 700; }
+.chroma .gu { color: #005cc5; font-weight: 700; }
+.chroma .gl { text-decoration: underline; }
+.chroma .go { color: #24292f; }
+.chroma .gr { color: #d73a49; }
+.chroma .gh { color: #005cc5; font-weight: 700; }
+.chroma .gt { color: #d73a49; }
+.chroma .w  { color: #fff; }
+
+/* 错误 */
+.chroma .err { color: #24292f; background-color: #ffeef0; }
+
+/* 行号 */
+.chroma .lnt, .chroma .ln { color: #959da5; }
+.chroma .hl { background-color: #fffbdd; }
+.chroma .lntd { vertical-align: top; }
+
+/* ---- 黑夜模式 ---- */
+[data-theme="dark"] .chroma { color: #e6edf3; background-color: var(--code-block-bg) !important; }
+[data-theme="dark"] .bg    { background-color: var(--code-block-bg) !important; }
+
+[data-theme="dark"] .chroma .c,
+[data-theme="dark"] .chroma .c1,
+[data-theme="dark"] .chroma .ch,
+[data-theme="dark"] .chroma .cm,
+[data-theme="dark"] .chroma .cp,
+[data-theme="dark"] .chroma .cpf,
+[data-theme="dark"] .chroma .cs { color: #8b949e; font-style: italic; }
+
+[data-theme="dark"] .chroma .k,
+[data-theme="dark"] .chroma .kc,
+[data-theme="dark"] .chroma .kd,
+[data-theme="dark"] .chroma .kn,
+[data-theme="dark"] .chroma .kp,
+[data-theme="dark"] .chroma .kr { color: #ff7b72; }
+
+[data-theme="dark"] .chroma .s,
+[data-theme="dark"] .chroma .s1,
+[data-theme="dark"] .chroma .s2,
+[data-theme="dark"] .chroma .sa,
+[data-theme="dark"] .chroma .sb,
+[data-theme="dark"] .chroma .sc,
+[data-theme="dark"] .chroma .dl,
+[data-theme="dark"] .chroma .sd,
+[data-theme="dark"] .chroma .se,
+[data-theme="dark"] .chroma .sh,
+[data-theme="dark"] .chroma .si,
+[data-theme="dark"] .chroma .sx,
+[data-theme="dark"] .chroma .sr,
+[data-theme="dark"] .chroma .ss { color: #a5d6ff; }
+
+[data-theme="dark"] .chroma .m,
+[data-theme="dark"] .chroma .mb,
+[data-theme="dark"] .chroma .mf,
+[data-theme="dark"] .chroma .mh,
+[data-theme="dark"] .chroma .mi,
+[data-theme="dark"] .chroma .il,
+[data-theme="dark"] .chroma .mo { color: #79c0ff; }
+
+[data-theme="dark"] .chroma .o,
+[data-theme="dark"] .chroma .ow,
+[data-theme="dark"] .chroma .or { color: #ff7b72; }
+
+[data-theme="dark"] .chroma .nf,
+[data-theme="dark"] .chroma .fm,
+[data-theme="dark"] .chroma .nc { color: #d2a8ff; }
+
+[data-theme="dark"] .chroma .nb,
+[data-theme="dark"] .chroma .bp { color: #ffa657; }
+
+[data-theme="dark"] .chroma .nt { color: #7ee787; }
+
+[data-theme="dark"] .chroma .nv,
+[data-theme="dark"] .chroma .vc,
+[data-theme="dark"] .chroma .vg,
+[data-theme="dark"] .chroma .vi,
+[data-theme="dark"] .chroma .vm { color: #79c0ff; }
+
+[data-theme="dark"] .chroma .na,
+[data-theme="dark"] .chroma .nc,
+[data-theme="dark"] .chroma .nd,
+[data-theme="dark"] .chroma .ne,
+[data-theme="dark"] .chroma .ni,
+[data-theme="dark"] .chroma .nl,
+[data-theme="dark"] .chroma .nn,
+[data-theme="dark"] .chroma .no,
+[data-theme="dark"] .chroma .nx { color: #d2a8ff; }
+
+[data-theme="dark"] .chroma .gd { color: #ffdcd7; background-color: #490202; }
+[data-theme="dark"] .chroma .gi { color: #aff5b4; background-color: #033a16; }
+[data-theme="dark"] .chroma .lnt,
+[data-theme="dark"] .chroma .ln  { color: #6e7681; }
+
+/* 通用：覆盖 PaperMod chroma-mod.css 的干扰 */
+.chroma { background-color: var(--code-block-bg) !important; }

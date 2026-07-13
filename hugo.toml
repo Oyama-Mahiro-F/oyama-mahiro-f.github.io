@@ -32,6 +32,8 @@ paginate = 8
     noClasses = false
     guessSyntax = true
     style = 'github'
+    lineNos = 'table'
+    lineNumbersInTable = false
 
 # 站点参数
 [params]
