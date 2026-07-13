@@ -426,3 +426,7 @@ code[class*="language-"], pre[class*="language-"] {
 
 /* 通用：覆盖 PaperMod chroma-mod.css 的干扰 */
 .chroma { background-color: var(--code-block-bg) !important; }
+
+/* 通用：覆盖 PaperMod md-content.css 中 .md-content pre code { color: rgb(213,213,214) } 的浅色文字，
+   否则白天模式下浅色背景上变量名（class=n 继承自 code）几乎不可见 */
+.md-content pre code { color: inherit; }
