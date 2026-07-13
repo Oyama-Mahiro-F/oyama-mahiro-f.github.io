@@ -463,8 +463,11 @@ body:has(.notes-body) #top-link {
     flex: 1;
     overflow-y: auto;
     padding: 20px 28px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 24px;
 }
-.notes-content .post-single { max-width: 800px; margin: 0 auto; }
+.notes-content .post-single { max-width: 800px; margin: 0 auto; min-height: calc(100vh - var(--header-height) - 40px); }
+.notes-content h1, .notes-content h2, .notes-content h3, .notes-content h4 { scroll-margin-top: 16px; }
 
 /* 右侧文章目录 */
 .notes-toc {
