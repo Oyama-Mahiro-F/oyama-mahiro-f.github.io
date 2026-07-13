@@ -395,9 +395,8 @@ code[class*="language-"], pre[class*="language-"] {
 .notes-body {
     display: flex;
     gap: 0;
-    margin: 1.5rem calc((100vw - 100%) / -2);
-    width: calc(100vw - var(--gap) * 2);
-    max-width: calc(100vw - var(--gap) * 2);
+    margin: 0 calc(var(--gap) * -1);
+    width: calc(100% + var(--gap) * 2);
 }
 
 /* ---- 左侧文件树 ---- */
@@ -559,4 +558,12 @@ code[class*="language-"], pre[class*="language-"] {
     .notes-body { width: 100%; margin: 1rem 0; }
     .notes-sidebar, .notes-toc { display: none; }
     .notes-content { padding: 0; max-height: none; }
+}
+
+/* 笔记页收紧顶部间距（已无标题头） */
+.post-single .notes-body {
+    margin-top: 0;
+}
+.post-single > .notes-body:first-child {
+    margin-top: calc(var(--gap) * -1);
 }
