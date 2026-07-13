@@ -391,12 +391,14 @@ code[class*="language-"], pre[class*="language-"] {
    笔记页三栏布局（内容区内，不影响全局 header/footer）
    ============================================ */
 
-/* 突破 PaperMod 的 720px 宽度限制 */
+/* 笔记页放宽内容宽度，让三栏有足够空间 */
+body:has(.notes-body) .main {
+    max-width: calc(100% - var(--gap) * 2);
+}
+
 .notes-body {
     display: flex;
     gap: 0;
-    margin: 0 calc(var(--gap) * -1);
-    width: calc(100% + var(--gap) * 2);
 }
 
 /* ---- 左侧文件树 ---- */
