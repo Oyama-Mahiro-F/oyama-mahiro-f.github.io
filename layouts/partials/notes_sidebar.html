@@ -13,7 +13,7 @@
   {{- if .IsSection }}
     {{- $isAncestor := $currentPage.IsAncestor . }}
     {{- $isCurrent := eq $currentPage . }}
-    <div class="nav-section">
+    <div class="nav-section{{ if not (or $isAncestor $isCurrent (eq $level 0)) }} collapsed{{ end }}">
       <a href="{{ .RelPermalink }}" class="nav-section-title level-{{ $level }}{{ if $isCurrent }} active{{ end }}">
         <span class="nav-toggle">▼</span>{{ .Title }}
       </a>
