@@ -79,7 +79,7 @@ paginate = 8
 [[menu.main]]
   identifier = 'notes'
   name = '笔记'
-  url = '/notes/'
+  url = 'https://oyama-mahiro-f.github.io/11408-notes-web/'
   weight = 15
 
 [[menu.main]]
