@@ -482,3 +482,7 @@ body.list .main > *:not(.first-entry) {
 .post-entry:nth-child(6) { animation-delay: .3s; }
 .post-entry:nth-child(7) { animation-delay: .35s; }
 .post-entry:nth-child(8) { animation-delay: .4s; }
+
+/* 笔记页隐藏标签（menu 已有链接到外部笔记站） */
+body:has([href*="11408-notes-web"]) .post-footer,
+.content-notes .post-footer { display: none; }

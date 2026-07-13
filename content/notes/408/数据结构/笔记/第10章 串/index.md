@@ -2,7 +2,7 @@
 title: "第10章 串"
 date: 2026-07-01
 draft: false
-tags: ["408", "数据结构"]
+tags: ["考研笔记"]
 categories: ["笔记"]
 ---
 <h2 align="center">第十章 串</h2>

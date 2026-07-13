@@ -2,7 +2,7 @@
 title: "第1章 计算机系统概述"
 date: 2026-07-01
 draft: false
-tags: ["408", "计算机组成原理"]
+tags: ["考研笔记"]
 categories: ["笔记"]
 ---
 <h2 align="center">第一章 计算机系统概述</h2>

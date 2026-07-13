@@ -2,7 +2,7 @@
 title: "第2章 物理层"
 date: 2026-07-01
 draft: false
-tags: ["408", "计算机网络"]
+tags: ["考研笔记"]
 categories: ["笔记"]
 ---
 ## 第二章 物理层

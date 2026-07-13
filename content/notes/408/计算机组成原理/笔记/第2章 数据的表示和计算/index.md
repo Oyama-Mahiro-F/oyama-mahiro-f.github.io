@@ -2,7 +2,7 @@
 title: "第2章 数据的表示和计算"
 date: 2026-07-01
 draft: false
-tags: ["408", "计算机组成原理"]
+tags: ["考研笔记"]
 categories: ["笔记"]
 ---
 <h2 align="center">第二章 数据的表示和运算</h2>
