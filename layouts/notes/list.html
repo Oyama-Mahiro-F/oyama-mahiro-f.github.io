@@ -1,0 +1,66 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title">{{ .Title }}</h1>
+  </header>
+
+  <div class="notes-body">
+    {{/* 左侧文件树 */}}
+    <aside class="notes-sidebar" id="notes-sidebar">
+      {{- partial "notes_sidebar.html" (dict "currentPage" .) }}
+    </aside>
+
+    {{/* 中间内容：卡片式章节列表 */}}
+    <div class="notes-content">
+      <div style="max-width:860px;margin:0 auto;">
+        {{- $pages := .Pages }}
+        {{- if $pages }}
+        <p style="color:var(--text-secondary, #888);margin-bottom:24px;font-size:0.95rem;">
+          共 {{ len $pages }} 个章节
+        </p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px;">
+          {{- range $pages }}
+          <a href="{{ .RelPermalink }}" style="background:var(--entry, #fff);border:1px solid var(--border-light, #e0e0e0);border-radius:10px;padding:20px 18px;text-decoration:none;color:var(--text-primary, #333);transition:transform .15s,box-shadow .15s,border-color .15s;"
+             onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 16px rgba(0,0,0,.06)';this.style.borderColor='var(--accent, #3b5ccc)';"
+             onmouseout="this.style.transform='';this.style.boxShadow='';this.style.borderColor='';">
+            <span style="font-size:1.8rem;display:block;margin-bottom:8px;">
+              {{- if .IsSection }}📁{{ else }}📄{{ end -}}
+            </span>
+            <div style="font-weight:600;font-size:1rem;">{{ .Title }}</div>
+            <div style="font-size:.78rem;color:var(--text-secondary, #888);margin-top:4px;">
+              {{- if .IsSection }}{{ len .Pages }} 个子章节{{ else }}{{ .ReadingTime }} 分钟{{ end -}}
+            </div>
+          </a>
+          {{- end }}
+        </div>
+        {{- else }}
+        <p style="color:var(--text-secondary, #888);">暂无内容</p>
+        {{- end }}
+      </div>
+    </div>
+  </div>
+</article>
+
+<script>
+document.querySelectorAll('.notes-sidebar .nav-toggle').forEach(el => {
+  el.addEventListener('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const section = this.closest('.nav-section');
+    if (section) section.classList.toggle('collapsed');
+  });
+});
+document.querySelectorAll('.notes-sidebar .nav-section-title').forEach(el => {
+  el.addEventListener('click', function(e) {
+    const section = this.closest('.nav-section');
+    if (section && section.querySelector('.nav-children') && section.classList.contains('collapsed')) {
+      e.preventDefault();
+      section.classList.remove('collapsed');
+    }
+  });
+});
+</script>
+
+{{- end }}{{/* end main */}}
