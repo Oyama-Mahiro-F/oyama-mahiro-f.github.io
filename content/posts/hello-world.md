@@ -2,7 +2,6 @@
 title: "Hello World — 博客搭建记录"
 date: "2026-07-13"
 draft: false
-tags: ["博客", "Hugo", "GitHub Pages"]
 categories: ["技术"]
 ---
 

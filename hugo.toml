@@ -69,36 +69,28 @@ paginate = 8
     threshold = 0.4
     minMatchCharLength = 0
 
+
 # 主菜单
 [[menu.main]]
-  identifier = 'posts'
-  name = '文章'
-  url = '/posts/'
+  identifier = 'home'
+  name = '首页'
+  url = '/'
   weight = 10
-
-[[menu.main]]
-
-[[menu.main]]
-  identifier = 'tags'
-  name = '标签'
-  url = '/tags/'
-  weight = 20
 
 [[menu.main]]
   identifier = 'archives'
   name = '归档'
   url = '/archives/'
-  weight = 30
+  weight = 20
 
 [[menu.main]]
-  identifier = 'search'
-  name = '搜索'
-  url = '/search/'
-  weight = 40
+  identifier = 'categories'
+  name = '分类'
+  url = '/categories/'
+  weight = 30
 
 [[menu.main]]
   identifier = 'about'
   name = '关于'
   url = '/about/'
   weight = 50
-
