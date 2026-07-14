@@ -1,0 +1,271 @@
+1:"$Sreact.fragment"
+2:I[80492,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"ThemeProvider"]
+3:I[61452,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+4:I[79674,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"MusicProvider"]
+5:I[94798,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+6:I[63571,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+7:I[39756,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+8:I[37457,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+15:I[68027,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default",1]
+:HL["/_next/static/chunks/145o.lsi86g0w.css","style"]
+:HL["/_next/static/chunks/066jf0nk75nic.css","style"]
+:HL["/_next/static/chunks/0~ydk.tni6snc.css","style"]
+:HL["/_next/static/chunks/02hv6qpo.nela.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.08e28id.o-okb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/f112ed7f0b91582f-s.p.0xqqmnf1a3x8p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/0-y7.kz1~5qzw.css","style"]
+0:{"P":null,"c":["","tree"],"q":"","i":false,"f":[[["",{"children":["tree",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/145o.lsi86g0w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/066jf0nk75nic.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/0~ydk.tni6snc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/chunks/02hv6qpo.nela.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0ph0hub54gnw..js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/02_50dy5bwdsx.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/00-csyj9a6t-x.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable noto_serif_sc_4b5b2b75-module__o_XRgq__variable h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","style",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              #app-mount-root { opacity: 0; visibility: hidden; pointer-events: none; }\n              html.splash-seen #app-mount-root { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }\n            "}}],["$","script",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              try {\n                if (sessionStorage.getItem('hasSeenSplash') === 'true') {\n                  document.documentElement.classList.add('splash-seen');\n                }\n              } catch (e) {}\n            "}}]]}],["$","body",null,{"className":"w-screen overflow-x-hidden min-h-full flex flex-col relative transition-colors duration-1000 bg-slate-50 dark:bg-slate-950 font-serif","children":["$","$L2",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","div",null,{"id":"app-mount-root","className":"flex-1 flex flex-col transition-opacity duration-1000","children":[["$","div",null,{"className":"fixed inset-0 z-[-1] pointer-events-none overflow-hidden","children":[false,["$","div",null,{"className":"absolute inset-0 z-[-9] bg-white/30 dark:bg-slate-900/40 backdrop-blur-md transition-colors duration-1000"}],["$","div",null,{"className":"absolute inset-0 z-[-8] opacity-60 dark:opacity-20 mix-blend-color transition-opacity duration-1000 transform-gpu","style":{"background":"linear-gradient(-45deg, #a18cd1, #fbc2eb, #a1c4fd, #c2e9fb)","backgroundSize":"400% 400%","animation":"gradientMove 15s ease infinite"}}],["$","div",null,{"className":"absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white/40 dark:bg-indigo-900/20 blur-[100px] rounded-full z-[-7] md:mix-blend-overlay"}],["$","div",null,{"className":"absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-400/30 dark:bg-purple-900/30 blur-[100px] rounded-full z-[-7] md:mix-blend-overlay"}],["$","div",null,{"className":"hidden md:block absolute inset-0 w-full h-full","children":["$","$L5",null,{}]}]]}],["$","div",null,{"className":"hidden md:block","children":["$","$L6",null,{}]}],["$","div",null,{"className":"relative z-10 flex-1 flex flex-col","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L9","$La"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Lb","$Lc","$Ld","$Le"]}],"$Lf"]}],"$L10"]}]}]]}]]}],{"children":["$L11",{"children":["$L12",{},null,false,null]},null,false,"$@13"]},null,false,null],"$L14",false]],"m":"$undefined","G":["$15",["$L16","$L17","$L18","$L19"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"p4X-0DmWr8XyK-Bzplbbs"}
+1a:I[94909,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1b:I[43173,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1c:I[38197,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1d:I[60567,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1e:I[92471,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1f:I[40883,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0xvccsd0dfm3f.js","/_next/static/chunks/0oh9tu6-4eu7..js","/_next/static/chunks/0iwhyxshj2rrg.js"],"default"]
+28:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"ViewportBoundary"]
+2a:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"MetadataBoundary"]
+2b:"$Sreact.suspense"
+9:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+a:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+b:["$","div",null,{"className":"hidden md:block","children":["$","$L1a",null,{}]}]
+c:["$","div",null,{"className":"hidden md:block","children":["$","$L1b",null,{}]}]
+d:["$","div",null,{"className":"md:hidden block","children":["$","$L1c",null,{}]}]
+e:["$","div",null,{"className":"hidden md:block","children":["$","$L1d",null,{}]}]
+f:["$","style",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              @keyframes gradientMove { \n                0% { background-position: 0% 50%; } \n                50% { background-position: 100% 50%; } \n                100% { background-position: 0% 50%; } \n              }\n            "}}]
+10:["$","div",null,{"className":"hidden md:block","children":["$","$L1e",null,{}]}]
+11:["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+20:T6ac,## 技术栈
+
+| 组件 | 选型 |
+|------|------|
+| 框架 | [Astro](https://astro.build/) v7 |
+| 模板 | [AstroPaper](https://github.com/satnaing/astro-paper) v7 |
+| 样式 | [Tailwind CSS](https://tailwindcss.com/) v4 |
+| 字体 | Roboto Variable（本地） + 系统中文回退 |
+| 搜索 | [Pagefind](https://pagefind.app/) |
+| 代码高亮 | [Shiki](https://shiki.style/)（自定义 Typora GitHub 主题） |
+| 数学公式 | [KaTeX](https://katex.org/) |
+| 部署 | GitHub Actions → GitHub Pages |
+
+## 本地开发
+
+```bash
+# 安装依赖
+cd astro-paper
+pnpm install
+
+# 启动开发服务器
+pnpm dev
+# → http://localhost:4321
+
+# 构建
+pnpm build
+```
+
+## 发布
+
+```bash
+# 推送即可，GitHub Actions 自动构建部署
+./push.bat "提交信息"
+```
+
+## 目录结构
+
+```
+astro-paper/
+├── src/
+│   ├── content/posts/       # 文章 (.md)
+│   ├── content/pages/       # 固定页面 (about.md)
+│   ├── pages/               # 路由页面
+│   ├── components/          # 组件
+│   ├── styles/              # 样式 (theme.css, typography.css)
+│   └── i18n/lang/           # 翻译 (zh-CN.ts)
+├── public/fonts/            # 本地字体
+└── astro-paper.config.ts    # 站点配置
+```
+
+## 文章格式
+
+```markdown
+---
+title: "文章标题"
+pubDatetime: 2026-07-15
+categories: ["技术", "前端"]
+description: "文章摘要"
+---
+
+正文内容...
+```
+
+支持 Markdown 语法 + KaTeX 公式（`$...$` / `$$...$$`）+ 代码语法高亮。
+
+## 致谢
+
+- [AstroPaper](https://github.com/satnaing/astro-paper) — 优秀的博客模板
+- [Hugo PaperMod](https://github.com/adityatelange/hugo-PaperMod) — 此前使用的 Hugo 主题21:T23a9,## 一、存储器的分类
+
+### 1. 按存储介质分类
+
+| 类型             | 介质         | 特点                      | 示例                        |
+| :--------------- | :----------- | :------------------------ | :-------------------------- |
+| **半导体存储器** | 半导体器件   | 体积小、速度快、功耗低    | 内存（DRAM）、Cache（SRAM） |
+| **磁表面存储器** | 磁性材料涂层 | 非易失、容量大、速度慢    | 硬盘（HDD）                 |
+| **光存储器**     | 光学介质     | 非易失、可移动、只读/可写 | CD、DVD、蓝光               |
+
+### 2. 按存取方式分类
+
+| 类型                      | 存取方式                           | 特点                 | 示例                       |
+| :------------------------ | :--------------------------------- | :------------------- | :------------------------- |
+| **随机存取存储器（RAM）** | 按地址访问，存取时间与物理位置无关 | 可读可写，易失       | DRAM、SRAM                 |
+| **只读存储器（ROM）**     | 正常工作时只能读不能写             | 非易失，断电保持     | BIOS、固件                 |
+| **顺序存取存储器（SAM）** | 按顺序读写，存取时间与位置相关     | 速度慢               | 磁带                       |
+| **直接存取存储器（DAM）** | 先定位区域再顺序搜索               | 介于 RAM 和 SAM 之间 | 磁盘（硬盘）               |
+| **相联存储器（CAM）**     | 按**内容**检索而非按地址           | 并行比较，速度快     | Cache 的 Tag 存储器（TLB） |
+
+### 3. 按在计算机中的作用分类
+
+```
+存储器层次
+├── 主存储器（内存）
+│   ├── RAM（DRAM 为主）
+│   └── ROM（BIOS、固件）
+├── 辅助存储器（外存）
+│   ├── 硬盘（HDD）
+│   ├── 固态硬盘（SSD）
+│   └── 光盘、U 盘
+├── 高速缓冲存储器（Cache）
+│   └── SRAM（集成在 CPU 内或 CPU 附近）
+└── 寄存器
+    └── CPU 内部，速度最快、容量最小
+```
+
+
+## 二、存储器的分级
+
+### 1. 存储器层次结构
+
+**矛盾**：程序员希望存储器容量大、速度快、价格低——但三者不可兼得。
+
+| 层次 | 存储器       | 速度      | 容量          | 价格 | 用途               |
+| :--- | :----------- | :-------- | :------------ | :--- | :----------------- |
+| L0   | 寄存器       | ns 级     | 几十~几百 B   | 最高 | CPU 内部暂存       |
+| L1   | Cache (SRAM) | 1~10 ns   | 几十 KB~几 MB | 很高 | 指令/数据缓存      |
+| L2   | 主存 (DRAM)  | 50~100 ns | 几 GB~几百 GB | 中等 | 运行中的程序和数据 |
+| L3   | 磁盘/SSD     | ms 级     | 几百 GB~几 TB | 低   | 永久存储           |
+| L4   | 光盘/磁带    | 更慢      | TB 级         | 最低 | 备份/归档          |
+
+```
+     ┌──────────────────────────────┐
+     │  寄存器 (CPU 内部，最快)        │
+     ├──────────────────────────────┤
+     │  L1 Cache (SRAM)             │
+     ├──────────────────────────────┤
+     │  L2/L3 Cache (SRAM)          │  ← 越往上越快、越小、越贵
+     ├──────────────────────────────┤
+     │  主存 (DRAM)                  │
+     ├──────────────────────────────┤
+     │  磁盘 / SSD                   │  ← 越往下越慢、越大、越便宜
+     └──────────────────────────────┘
+```
+
+### 2. 局部性原理
+
+| 类型           | 含义                                   | 示例               |
+| :------------- | :------------------------------------- | :----------------- |
+| **时间局部性** | 刚被访问过的数据不久后可能再次被访问   | 循环中的指令和变量 |
+| **空间局部性** | 刚被访问数据附近的数据可能紧接着被访问 | 顺序执行、数组遍历 |
+
+### 3. 命中与平均访问时间
+
+- **命中（Hit）**：CPU 访问的数据在高层存储器中找到
+- **缺失（Miss）**：未找到，需从下一层调入
+- **命中率 $H$** = 命中次数 / 总访问次数
+- **平均访问时间**：$$T_{avg} = H \times T_{hit} + (1-H) \times T_{miss}$$
+
+---
+
+## 三、主存储器的技术指标
+
+| 指标                 | 含义                                   | 单位               |
+| :------------------- | :------------------------------------- | :----------------- |
+| **存储容量**         | = 存储单元个数 × 存储字长              | 字×位 或 字节（B） |
+| **存取时间 $T_a$**   | 从启动一次存储器操作到完成该操作的时间 | ns                 |
+| **存取周期 $T_m$**   | 连续两次独立存取操作的最小间隔         | ns                 |
+| **存储器带宽 $B_m$** | 单位时间内存储器传输的数据量           | B/s、MB/s、GB/s    |
+
+> **$T_m > T_a$**：一次存取后需要恢复时间（尤其 DRAM 需预充电），所以存取周期 > 存取时间。
+>
+> **存储器带宽公式**：$B_m = W / T_m$（$W$ 为存储器字长），即每秒可并行读出的数据量。
+
+---
+
+## 四、存储器与 CPU 的连接
+
+主存通过**地址总线、数据总线、控制总线**与 CPU 连接。
+
+![image-20260714110014979](存储器概述.assets/image-20260714110014979.png)
+
+| 总线         | 功能                            | 方向           | 位数决定因素                |
+| :----------- | :------------------------------ | :------------- | :-------------------------- |
+| **地址总线** | CPU → 主存，传输要访问的地址    | 单向           | MAR 位数 → 决定最大寻址范围 |
+| **数据总线** | CPU ↔ 主存，传输数据            | 双向           | MDR 位数 → 决定存储字长     |
+| **控制总线** | CPU → 主存，传输读/写等控制信号 | 每根线方向固定 | —                           |
+
+**芯片容量扩展**：
+
+| 扩展方式         | 用途             | 连接方式                                     |
+| :--------------- | :--------------- | :------------------------------------------- |
+| **位扩展**       | 数据位宽不够     | 多片并联：共用地址线和控制线，数据线各自独立 |
+| **字扩展**       | 地址空间不够     | 多片串联：高位地址经译码产生片选信号         |
+| **字位同时扩展** | 容量和位宽均不够 | 先位扩展拼成所需位宽，再字扩展拼成所需容量   |
+
+---
+
+## 五、内存条
+
+内存条（DIMM, Dual In-line Memory Module）是将多个 DRAM 芯片焊接在一块小电路板上的**标准化模块**，通过内存插槽与主板连接。
+
+### 1. 内存条的基本组成
+
+- 一块内存条上有**多颗 DRAM 芯片**并联，构成 64 bit 数据位宽（现代 PC 标准）
+- 内存条上有 **SPD（Serial Presence Detect）** 芯片——一片小 EEPROM，存储该内存条的时序参数和容量信息，供 BIOS 初始化时读取
+
+### 2. 内存条的信号线
+
+| 信号线     | 功能                                                       |
+| :--------- | :--------------------------------------------------------- |
+| **地址线** | 传送行/列地址（分时复用）                                  |
+| **数据线** | 64 bit（标准 DIMM）                                        |
+| **控制线** | RAS#（行选通）、CAS#（列选通）、WE#（写使能）、CS#（片选） |
+| **时钟线** | 同步时钟信号（SDRAM 及之后的标准）                         |
+| **SPD 线** | I²C 总线，读取 SPD 信息                                    |
+
+### 3. 内存条的发展
+
+| 类型          | 全称               | 特点                             | 工作电压    |
+| :------------ | :----------------- | :------------------------------- | :---------- |
+| **SIMM**      | 单列直插内存模块   | 32 bit 位宽，已淘汰              | 5V          |
+| **DIMM**      | 双列直插内存模块   | 64 bit 位宽，现代 PC 主流        | —           |
+| **SDRAM**     | 同步 DRAM          | 与系统时钟同步（第一个同步标准） | 3.3V        |
+| **DDR SDRAM** | 双倍数据速率 SDRAM | 时钟上升沿/下降沿各传一次数据    | 2.5V        |
+| **DDR2/DDR3** | —                  | 提高预取位宽、降低电压           | 1.8V / 1.5V |
+| **DDR4/DDR5** | —                  | 更高频率、更低电压、更大容量     | 1.2V / 1.1V |
+
+> **DDR 的命名含义**："Double Data Rate"——每个时钟周期在上升沿和下降沿各传输一次数据，因此数据传输率 = 内存时钟频率 × 2。12:["$","$1","c",{"children":[["$","$L1f",null,{"posts":[{"id":"hello-world","slug":"hello-world","title":"Hello World — 博客搭建记录","type":"post","date":"2026-07-13 10:00:00","cover":null,"content":"$20"},{"id":"存储器概述","slug":"存储器概述","title":"存储器概述","type":"post","date":"2026-07-13 14:00:00","cover":null,"content":"$21"}],"chatters":[],"moments":[]}],["$L22","$L23","$L24","$L25"],"$L26"]}]
+27:[]
+13:"$W27"
+14:["$","$1","h",{"children":[null,["$","$L28",null,{"children":"$L29"}],["$","div",null,{"hidden":true,"children":["$","$L2a",null,{"children":["$","$2b",null,{"name":"Next.Metadata","children":"$L2c"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+16:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/145o.lsi86g0w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/066jf0nk75nic.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/0~ydk.tni6snc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:["$","link","3",{"rel":"stylesheet","href":"/_next/static/chunks/02hv6qpo.nela.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+2d:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"OutletBoundary"]
+22:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0-y7.kz1~5qzw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+23:["$","script","script-0",{"src":"/_next/static/chunks/0xvccsd0dfm3f.js","async":true,"nonce":"$undefined"}]
+24:["$","script","script-1",{"src":"/_next/static/chunks/0oh9tu6-4eu7..js","async":true,"nonce":"$undefined"}]
+25:["$","script","script-2",{"src":"/_next/static/chunks/0iwhyxshj2rrg.js","async":true,"nonce":"$undefined"}]
+26:["$","$L2d",null,{"children":["$","$2b",null,{"name":"Next.MetadataOutlet","children":"$@2e"}]}]
+29:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2f:I[27201,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"IconMark"]
+2c:[["$","title","0",{"children":"义务教育漏网之鱼"}],["$","meta","1",{"name":"description","content":"BUPT网络安全本科生。记录编程学习、项目经验和思考。"}],["$","link","2",{"rel":"icon","href":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E"}],["$","link","3",{"rel":"apple-touch-icon","href":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E"}],["$","$L2f","4",{}]]
+2e:null

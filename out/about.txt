@@ -1,0 +1,183 @@
+1:"$Sreact.fragment"
+2:I[80492,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"ThemeProvider"]
+3:I[61452,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+4:I[79674,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"MusicProvider"]
+5:I[94798,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+6:I[63571,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+7:I[39756,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+8:I[37457,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+15:I[68027,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default",1]
+:HL["/_next/static/chunks/145o.lsi86g0w.css","style"]
+:HL["/_next/static/chunks/066jf0nk75nic.css","style"]
+:HL["/_next/static/chunks/0~ydk.tni6snc.css","style"]
+:HL["/_next/static/chunks/02hv6qpo.nela.css","style"]
+:HL["/_next/static/media/797e433ab948586e-s.p.08e28id.o-okb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/caa3a2e1cccd8315-s.p.09~u27dqhyhd6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/f112ed7f0b91582f-s.p.0xqqmnf1a3x8p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/15cahw4d8-wp1.css","style"]
+:HL["/_next/static/chunks/0-y7.kz1~5qzw.css","style"]
+0:{"P":null,"c":["","about"],"q":"","i":false,"f":[[["",{"children":["about",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",16],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/145o.lsi86g0w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/066jf0nk75nic.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/0~ydk.tni6snc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","3",{"rel":"stylesheet","href":"/_next/static/chunks/02hv6qpo.nela.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0ph0hub54gnw..js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/02_50dy5bwdsx.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/00-csyj9a6t-x.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","className":"geist_a71539c9-module__T19VSG__variable geist_mono_8d43a2aa-module__8Li5zG__variable noto_serif_sc_4b5b2b75-module__o_XRgq__variable h-full antialiased","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","style",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              #app-mount-root { opacity: 0; visibility: hidden; pointer-events: none; }\n              html.splash-seen #app-mount-root { opacity: 1 !important; visibility: visible !important; pointer-events: auto !important; }\n            "}}],["$","script",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              try {\n                if (sessionStorage.getItem('hasSeenSplash') === 'true') {\n                  document.documentElement.classList.add('splash-seen');\n                }\n              } catch (e) {}\n            "}}]]}],["$","body",null,{"className":"w-screen overflow-x-hidden min-h-full flex flex-col relative transition-colors duration-1000 bg-slate-50 dark:bg-slate-950 font-serif","children":["$","$L2",null,{"children":[["$","$L3",null,{}],["$","$L4",null,{"children":[["$","div",null,{"id":"app-mount-root","className":"flex-1 flex flex-col transition-opacity duration-1000","children":[["$","div",null,{"className":"fixed inset-0 z-[-1] pointer-events-none overflow-hidden","children":[false,["$","div",null,{"className":"absolute inset-0 z-[-9] bg-white/30 dark:bg-slate-900/40 backdrop-blur-md transition-colors duration-1000"}],["$","div",null,{"className":"absolute inset-0 z-[-8] opacity-60 dark:opacity-20 mix-blend-color transition-opacity duration-1000 transform-gpu","style":{"background":"linear-gradient(-45deg, #a18cd1, #fbc2eb, #a1c4fd, #c2e9fb)","backgroundSize":"400% 400%","animation":"gradientMove 15s ease infinite"}}],["$","div",null,{"className":"absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-white/40 dark:bg-indigo-900/20 blur-[100px] rounded-full z-[-7] md:mix-blend-overlay"}],["$","div",null,{"className":"absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-indigo-400/30 dark:bg-purple-900/30 blur-[100px] rounded-full z-[-7] md:mix-blend-overlay"}],["$","div",null,{"className":"hidden md:block absolute inset-0 w-full h-full","children":["$","$L5",null,{}]}]]}],["$","div",null,{"className":"hidden md:block","children":["$","$L6",null,{}]}],["$","div",null,{"className":"relative z-10 flex-1 flex flex-col","children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],"$L9","$La"]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}],"$Lb","$Lc","$Ld","$Le"]}],"$Lf"]}],"$L10"]}]}]]}]]}],{"children":["$L11",{"children":["$L12",{},null,false,null]},null,false,"$@13"]},null,false,null],"$L14",false]],"m":"$undefined","G":["$15",["$L16","$L17","$L18","$L19"]],"S":true,"h":null,"s":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"p4X-0DmWr8XyK-Bzplbbs"}
+1a:I[94909,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1b:I[43173,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1c:I[38197,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1d:I[60567,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+1e:I[92471,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"default"]
+20:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"OutletBoundary"]
+21:"$Sreact.suspense"
+24:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"ViewportBoundary"]
+26:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"MetadataBoundary"]
+9:["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}]
+a:["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]
+b:["$","div",null,{"className":"hidden md:block","children":["$","$L1a",null,{}]}]
+c:["$","div",null,{"className":"hidden md:block","children":["$","$L1b",null,{}]}]
+d:["$","div",null,{"className":"md:hidden block","children":["$","$L1c",null,{}]}]
+e:["$","div",null,{"className":"hidden md:block","children":["$","$L1d",null,{}]}]
+f:["$","style",null,{"suppressHydrationWarning":true,"dangerouslySetInnerHTML":{"__html":"\n              @keyframes gradientMove { \n                0% { background-position: 0% 50%; } \n                50% { background-position: 100% 50%; } \n                100% { background-position: 0% 50%; } \n              }\n            "}}]
+10:["$","div",null,{"className":"hidden md:block","children":["$","$L1e",null,{}]}]
+11:["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}]
+12:["$","$1","c",{"children":["$L1f",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/15cahw4d8-wp1.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/0-y7.kz1~5qzw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/0ca5encisos.r.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/0iwhyxshj2rrg.js","async":true,"nonce":"$undefined"}]],["$","$L20",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@22"}]}]]}]
+23:[]
+13:"$W23"
+14:["$","$1","h",{"children":[null,["$","$L24",null,{"children":"$L25"}],["$","div",null,{"hidden":true,"children":["$","$L26",null,{"children":["$","$21",null,{"name":"Next.Metadata","children":"$L27"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}]
+16:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/145o.lsi86g0w.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+17:["$","link","1",{"rel":"stylesheet","href":"/_next/static/chunks/066jf0nk75nic.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+18:["$","link","2",{"rel":"stylesheet","href":"/_next/static/chunks/0~ydk.tni6snc.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+19:["$","link","3",{"rel":"stylesheet","href":"/_next/static/chunks/02hv6qpo.nela.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]
+28:I[62319,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ca5encisos.r.js","/_next/static/chunks/0iwhyxshj2rrg.js"],"default"]
+29:I[66357,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ca5encisos.r.js","/_next/static/chunks/0iwhyxshj2rrg.js"],"default"]
+2a:T1fc5,
+            .prose h1 { font-size: 1.8rem !important; font-weight: 900 !important; margin-bottom: 1.2rem !important; margin-top: 2rem !important; line-height: 1.3 !important; color: inherit !important; }
+            .prose h2 { font-size: 1.5rem !important; font-weight: 800 !important; margin-bottom: 1rem !important; margin-top: 1.5rem !important; color: inherit !important; }
+            .prose h3 { font-size: 1.2rem !important; font-weight: 700 !important; margin-bottom: 0.8rem !important; color: inherit !important; }
+            .prose p { font-size: 0.95rem !important; line-height: 1.75 !important; color: inherit !important; }
+            
+            .prose a { color: #6366f1 !important; text-decoration: none !important; font-weight: 600 !important; border-bottom: 1px dashed #6366f1 !important; transition: all 0.3s ease !important; }
+            .prose a:hover { color: #4f46e5 !important; border-bottom-style: solid !important; background-color: rgba(99, 102, 241, 0.1) !important; padding: 0 0.2rem !important; border-radius: 0.2rem !important; }
+            .dark .prose a { color: #818cf8 !important; border-bottom-color: #818cf8 !important; }
+            .dark .prose a:hover { color: #a5b4fc !important; background-color: rgba(129, 140, 248, 0.15) !important; }
+
+            .prose ul { list-style-type: disc !important; padding-left: 1.5rem !important; font-size: 0.95rem !important; }
+            .prose ol { list-style-type: decimal !important; padding-left: 1.5rem !important; font-size: 0.95rem !important; }
+            .prose li { display: list-item !important; margin-bottom: 0.5rem !important; }
+            
+            .prose ul ul, .prose ol ul { list-style-type: circle !important; margin-top: 0.25rem !important; margin-bottom: 0.25rem !important; }
+            .prose ol ol, .prose ul ol { list-style-type: lower-alpha !important; margin-top: 0.25rem !important; margin-bottom: 0.25rem !important; }
+            
+            /* 🌟 删除线强制展现 */
+            .prose s, .prose del { text-decoration-line: line-through !important; opacity: 0.6; }
+
+            /* 🌟 引用块专属果冻极客风样式补丁 */
+            .prose blockquote {
+              border-left: 4px solid #6366f1 !important;
+              background-color: rgba(99, 102, 241, 0.05) !important;
+              padding: 1rem 1.5rem !important;
+              margin: 1.5rem 0 !important;
+              border-radius: 0 1.25rem 1.25rem 0 !important;
+              font-style: italic !important;
+              color: #64748b !important;
+              quotes: none !important; /* 强制移除 Tailwind 原生的丑陋大引号 */
+            }
+            .prose blockquote p {
+              margin: 0 !important; 
+              color: inherit !important;
+            }
+            /* 🌟 彻底杀掉 Tailwind Typography 生成的前后伪元素引号！ */
+            .prose blockquote p::before,
+            .prose blockquote p::after {
+              display: none !important;
+              content: none !important;
+            }
+            
+            .dark .prose blockquote {
+              border-left-color: #818cf8 !important;
+              background-color: rgba(129, 140, 248, 0.1) !important;
+              color: #94a3b8 !important;
+            }
+            
+            /* 🌟 果冻极客风代码字体：更圆滑、更饱满！大圆角拉满！ */
+            .prose pre {
+              background-color: #282c34 !important; color: #abb2bf !important;
+              padding: 1rem !important; border-radius: 1.25rem !important;
+              overflow-x: auto !important; box-shadow: inset 0 0 10px rgba(0,0,0,0.3) !important;
+              margin-top: 1rem !important; margin-bottom: 1rem !important;
+            }
+            
+            .prose pre code, .prose p code, .prose li code { 
+              font-family: ui-rounded, 'Quicksand', 'Nunito', 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Source Code Pro', Menlo, Monaco, Consolas, monospace !important;
+              font-variant-ligatures: contextual !important;
+              font-weight: 500 !important;
+              letter-spacing: 0.02em !important;
+            }
+            
+            .prose pre code { 
+              background-color: transparent !important; 
+              padding: 0 !important; 
+              color: inherit !important; 
+              font-size: 0.85em !important; 
+            }
+            
+            .prose code::before, .prose code::after { content: none !important; }
+            
+            .prose p code, .prose li code { 
+              background-color: rgba(99, 102, 241, 0.1) !important; color: #6366f1 !important; 
+              padding: 0.2rem 0.4rem !important; border-radius: 0.5rem !important; font-size: 0.85em !important; 
+            }
+            .dark .prose p code, .dark .prose li code { background-color: rgba(99, 102, 241, 0.2) !important; color: #818cf8 !important; }
+            
+            /* 🌟 确保前台生成的 <br> 占据真实的垂直空间 */
+            .prose br { display: block !important; content: "" !important; margin-top: 0.5em !important; }
+
+            .prose img { display: block !important; margin: 1.5rem auto !important; border-radius: 1rem !important; box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important; max-width: 100% !important; height: auto !important; }
+
+            /* 🌟 Atom One Dark 顶级补丁 */
+            .prose pre code .hljs-comment, .prose pre code .hljs-quote { color: #5c6370 !important; font-style: italic !important; }
+            .prose pre code .hljs-doctag, .prose pre code .hljs-keyword, .prose pre code .hljs-formula { color: #c678dd !important; }
+            .prose pre code .hljs-keyword.type_, .prose pre code .hljs-type { color: #c678dd !important; } 
+            .prose pre code .hljs-section, .prose pre code .hljs-name, .prose pre code .hljs-selector-tag, .prose pre code .hljs-deletion, .prose pre code .hljs-subst { color: #e06c75 !important; }
+            .prose pre code .hljs-literal { color: #56b6c2 !important; }
+            .prose pre code .hljs-string, .prose pre code .hljs-regexp, .prose pre code .hljs-addition, .prose pre code .hljs-attribute, .prose pre code .hljs-meta-string { color: #98c379 !important; }
+            .prose pre code .hljs-built_in, .prose pre code .hljs-class .hljs-title, .prose pre code .hljs-title.class_ { color: #e6c07b !important; } 
+            .prose pre code .hljs-attr, .prose pre code .hljs-variable, .prose pre code .hljs-template-variable, .prose pre code .hljs-selector-class, .prose pre code .hljs-selector-attr, .prose pre code .hljs-selector-pseudo, .prose pre code .hljs-number { color: #d19a66 !important; }
+            .prose pre code .hljs-symbol, .prose pre code .hljs-bullet, .prose pre code .hljs-link, .prose pre code .hljs-meta, .prose pre code .hljs-selector-id, .prose pre code .hljs-title, .prose pre code .hljs-title.function_ { color: #61aeee !important; } 
+
+            @media (min-width: 768px) {
+              .prose h1 { font-size: 3rem !important; font-weight: 950 !important; margin-bottom: 2rem !important; margin-top: 3rem !important; line-height: 1.1 !important; }
+              .prose h2 { font-size: 2.2rem !important; margin-bottom: 1.5rem !important; margin-top: 2rem !important; }
+              .prose h3 { font-size: 1.5rem !important; margin-bottom: 1rem !important; }
+              .prose p { font-size: 1.15rem !important; line-height: 1.85 !important; }
+              
+              .prose ul, .prose ol { padding-left: 2rem !important; font-size: 1.1rem !important; }
+              
+              .prose pre { padding: 1.25rem !important; margin-top: 1.5rem !important; margin-bottom: 1.5rem !important; border-radius: 1.5rem !important; }
+              .prose pre code { font-size: 0.9em !important; }
+              .prose p code, .prose li code { padding: 0.2rem 0.4rem !important; font-size: 0.9em !important; border-radius: 0.375rem !important;}
+              .prose img { margin: 2rem auto !important; border-radius: 2rem !important; box-shadow: 0 20px 50px rgba(0,0,0,0.15) !important; }
+            }
+          1f:["$","div",null,{"className":"min-h-screen relative pb-20","children":[["$","$L28",null,{}],["$","$L29",null,{"children":["$","main",null,{"className":"w-[95%] md:w-[90%] max-w-4xl mx-auto mt-24 md:mt-28 relative z-10","children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"$2a"}}],"$L2b"]}]}]]}]
+2c:I[13632,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ca5encisos.r.js","/_next/static/chunks/0iwhyxshj2rrg.js"],"default"]
+2d:T8e2,<p>个人简介</p>
+<p>你好，我是义务教育漏网之鱼</p>
+<p>BUPT信息安全专业本科生，研究方向为<strong>人工智能安全、全同态加密、语音安全</strong>。</p>
+<p><strong>🔬 研究与计算方向</strong></p>
+<ul>
+<li><strong>跨模态越狱</strong>：攻击者利用多模态大模型在处理不同模态数据时的<strong>安全漏洞与对齐不一致性</strong>，通过精心设计的交叉模态输入，<strong>绕过模型的内置安全护栏</strong>，诱导模型生成违规、不安全或有害的输出。</li>
+<li><strong>视觉对抗性攻击</strong>：对齐过程中，模型把图像和文本映射到同一个隐空间。攻击者只要在图像上加一点点人眼看不见的扰动，就能让模型输出完全错误的对齐结果，这在自动驾驶、内容审核场景下是致命的。</li>
+<li><strong>多模态后门与偏见</strong>：如果训练数据里图文匹配存在系统性偏差（比如“护士”总配女性图片），对齐后的模型会放大这种社会偏见。</li>
+</ul>
+<p><strong>💻 软件工程能力</strong></p>
+<ul>
+<li><strong>PyTorch</strong>：
+<ul>
+<li><strong>Dataset/Dataloader 重构</strong>：多模态数据（图文对/音视频）往往体积巨大，你必须熟练掌握<strong>内存映射（Memory Mapping）</strong> 和<strong>自定义Sampler</strong>，确保GPU从不空闲等待数据加载。</li>
+<li><strong>分布式调试</strong>：能看懂<code>torch.distributed</code>报错，知道怎么在DDP（分布式数据并行）下保存checkpoint。</li>
+</ul>
+</li>
+<li><strong>自动化攻击框架搭建</strong>：能编写<strong>并发请求脚本</strong>（Async/Await），同时向API或本地模型发送数千个变异的对抗样本，并自动解析返回的JSON，过滤出“有害内容”。</li>
+<li><strong>向量数据库与检索工程</strong>：熟练使用 <strong>FAISS</strong> 或 <strong>Milvus</strong>，能快速在大规模向量库中做相似性搜索（用于检测训练数据泄露或后门触发）。</li>
+<li><strong>CUDA 基础</strong>：能读懂简单的<code>.cu</code>文件，会使用<code>nvprof</code>分析显存瓶颈。</li>
+</ul>
+<p><strong>欢迎各位朋友联系交流~</strong></p>2b:["$","$21",null,{"fallback":["$","div",null,{"className":"h-96 flex items-center justify-center text-slate-500 font-bold animate-pulse","children":"正在载入档案..."}],"children":["$","$L2c",null,{"contentHtml":"$2d","coverImage":"https://bu.dusays.com/2026/03/24/69c23dc278c78.jpg","activities":[{"id":"posts-存储器概述.md","type":"文章","title":"存储器概述","date":"2026-07-13T06:00:00.000Z","url":"/posts/存储器概述"},{"id":"posts-hello-world.md","type":"文章","title":"Hello World — 博客搭建记录","date":"2026-07-13T02:00:00.000Z","url":"/posts/hello-world"}]}]}]
+25:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+2e:I[27201,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"IconMark"]
+22:null
+27:[["$","title","0",{"children":"义务教育漏网之鱼"}],["$","meta","1",{"name":"description","content":"BUPT网络安全本科生。记录编程学习、项目经验和思考。"}],["$","link","2",{"rel":"icon","href":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E"}],["$","link","3",{"rel":"apple-touch-icon","href":"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E"}],["$","$L2e","4",{}]]

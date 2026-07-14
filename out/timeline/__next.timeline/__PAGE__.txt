@@ -1,0 +1,9 @@
+1:"$Sreact.fragment"
+2:I[26015,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ofx9d.w80r7x.js"],"ToastProvider"]
+3:I[62319,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ofx9d.w80r7x.js"],"default"]
+4:I[66357,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ofx9d.w80r7x.js"],"default"]
+5:I[38366,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js","/_next/static/chunks/0ofx9d.w80r7x.js"],"default"]
+6:I[97367,["/_next/static/chunks/0ph0hub54gnw..js","/_next/static/chunks/02_50dy5bwdsx.js","/_next/static/chunks/00-csyj9a6t-x.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"children":["$","div",null,{"className":"min-h-screen relative pb-32","children":[["$","$L3",null,{}],["$","$L4",null,{"children":["$","$L5",null,{"posts":[{"slug":"存储器概述","title":"存储器概述","date":"2026-07-13 14:00:00","description":"3.1 存储器概述","tags":["计算机组成原理"],"cover":"https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"},{"slug":"hello-world","title":"Hello World — 博客搭建记录","date":"2026-07-13 10:00:00","description":"博客技术栈、搭建命令与部署说明","tags":["博客"],"cover":"https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop"}],"tags":[{"name":"博客","count":1},{"name":"计算机组成原理","count":1}]}]}]]}]}],[["$","script","script-0",{"src":"/_next/static/chunks/0ofx9d.w80r7x.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"p4X-0DmWr8XyK-Bzplbbs"}
+8:null
