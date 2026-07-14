@@ -62,7 +62,49 @@
 
 ---
 
-## 三、首页 (index.astro)
+## 三、布局宽度
+
+将 Astro Paper 默认的 `max-w-3xl` (768px) 加宽：
+
+- `max-w-app`：从 `max-w-3xl` (48rem) → `max-w-6xl` (72rem / 1152px)
+- 适用于 header、main content、footer 的 `app-layout` 容器
+
+理由：容纳右侧 TOC 栏需要更宽的布局空间，同时提升桌面阅读体验。
+
+---
+
+## 四、右侧 TOC 栏
+
+文章详情页新增右侧 sticky 目录栏。桌面端显示，移动端隐藏。
+
+### 布局
+```
+[Header: nav bar]
+
+[main]
+  [article content (左侧)]  |  [TOC (右侧, sticky)]
+   max-w-app 内部 flex       |  200px 宽, sticky top-24
+
+[Footer]
+```
+
+### 行为
+- 从文章 h2-h4 标题自动生成目录（跳过 h1 文章主标题）
+- `position: sticky`，`top: 6rem`，跟随滚动
+- 当前阅读标题高亮（IntersectionObserver 监听标题元素，active 类加 accent 色 + 左边框）
+- 点击锚点平滑滚动
+- 超过一定层级偏移缩进（h3 比 h2 多 1em，h4 比 h3 多 1em）
+- 移动端 (`<md`): 隐藏
+- 如果文章无标题（短内容），TOC 不渲染
+
+### 实现
+- 新建 `src/components/Toc.astro`：接收 `headings` 数组，渲染粘性导航
+- 在 PostLayout 或 post 页面中引入，从 Markdown `render()` 获取 `headings`
+- 高亮逻辑通过内联 JS 的 IntersectionObserver 实现
+
+---
+
+## 五、首页
 
 ### Hero 区域
 
@@ -81,7 +123,7 @@
 
 ---
 
-## 四、导航栏 (Header.astro)
+## 六、导航栏 (Header.astro)
 
 ### 导航链接（桌面端）
 
@@ -99,7 +141,7 @@
 
 ---
 
-## 五、分类系统 (替代 Tags)
+## 七、分类系统 (替代 Tags)
 
 全局替换 tags 为 categories：
 
@@ -114,7 +156,7 @@
 
 ---
 
-## 六、KaTeX 数学公式
+## 八、KaTeX 数学公式
 
 - 安装 `remark-math` + `rehype-katex`
 - 在 `astro.config.ts` 的 markdown 配置中注册
@@ -123,7 +165,7 @@
 
 ---
 
-## 七、代码高亮 (自定义 Shiki 主题)
+## 九、代码高亮 (自定义 Shiki 主题)
 
 - 创建两个 Shiki 主题 JSON 文件
 - Light 主题色值对齐 Hugo 当前 Chroma Typora GitHub light
@@ -159,7 +201,7 @@
 
 ---
 
-## 八、i18n 中文化
+## 十、i18n 中文化
 
 - 新增 `src/i18n/zh-CN.ts`
 - 翻译项覆盖：nav 标签 (Posts→文章、Categories→分类、About→关于)、按钮文案、搜索 UI、页面标题、辅助标签
@@ -168,7 +210,7 @@
 
 ---
 
-## 九、内容迁移
+## 十一、内容迁移
 
 ### Hello World 文章
 - `content/posts/hello-world.md` → `src/content/posts/hello-world.md`
@@ -181,7 +223,7 @@
 
 ---
 
-## 十、站点配置 (astro-paper.config.ts)
+## 十二、站点配置 (astro-paper.config.ts)
 
 ```ts
 export default defineAstroPaperConfig({
@@ -213,13 +255,15 @@ export default defineAstroPaperConfig({
 |------|------|------|
 | `src/styles/theme.css` | 重写 | 新配色变量 |
 | `src/styles/typography.css` | 修改 | 链接动画、h3 取消 italic、行高 |
-| `src/styles/global.css` | 微调 | 圆角/阴影令牌、卡片动画 |
+| `src/styles/global.css` | 微调 | max-w-app 加宽、圆角/阴影令牌、卡片动画 |
 | `src/pages/index.astro` | 修改 | 渐变 hero、卡片样式 |
 | `src/components/Header.astro` | 修改 | 导航链接 + 笔记外链 |
 | `src/components/Card.astro` | 修改 | 卡片 hover 样式 |
+| `src/components/Toc.astro` | 新建 | 右侧 sticky 目录栏 + IntersectionObserver |
 | `src/components/Footer.astro` | 保持 | — |
 | `src/layouts/Layout.astro` | 修改 | 引入 KaTeX CSS |
 | `src/layouts/PostLayout.astro` | 保持 | — |
+| `src/pages/posts/[...slug]/index.astro` | 修改 | 引入 Toc 组件、flex 布局 |
 | `src/pages/tags/*` | 改名+改内容 | → categories |
 | `src/components/Tag.astro` | 改名 | → CategoryCard.astro |
 | `src/i18n/en.ts` | 可保留 | |
