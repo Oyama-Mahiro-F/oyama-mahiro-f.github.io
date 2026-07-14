@@ -3,29 +3,15 @@ chcp 65001 >nul
 REM ===================================
 REM 博客发布脚本 (Windows)
 REM 双击运行，或: push.bat "提交信息"
+REM 构建在 GitHub Actions 中完成
 REM ===================================
 cd /d D:\blog
-
-set HUGO=C:\Users\61468\AppData\Local\Microsoft\WinGet\Packages\Hugo.Hugo.Extended_Microsoft.Winget.Source_8wekyb3d8bbwe\hugo.exe
 
 echo ====================================
 echo   博客发布脚本
 echo ====================================
 echo.
-echo [1/3] 构建 Hugo...
-
-rmdir /s /q public 2>nul
-del .hugo_build.lock 2>nul
-"%HUGO%" --minify
-if %errorlevel% neq 0 (
-    echo ❌ 构建失败！
-    pause
-    exit /b 1
-)
-echo ✅ 构建完成
-
-echo.
-echo [2/3] 提交到 Git...
+echo [1/2] 提交到 Git...
 
 git add -A
 
@@ -40,7 +26,7 @@ if %errorlevel% neq 0 (
 )
 
 echo.
-echo [3/3] 推送到 GitHub...
+echo [2/2] 推送到 GitHub...
 
 git push
 if %errorlevel% neq 0 (
@@ -51,7 +37,7 @@ if %errorlevel% neq 0 (
 
 echo.
 echo ====================================
-echo   🎉 发布完成！
+echo   推送完成！GitHub Actions 将自动构建和部署
 echo   https://oyama-mahiro-f.github.io
 echo ====================================
 echo.

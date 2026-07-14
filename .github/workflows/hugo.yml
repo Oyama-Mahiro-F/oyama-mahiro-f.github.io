@@ -1,4 +1,4 @@
-name: Deploy Hugo site to Pages
+name: Deploy Astro site to Pages
 
 on:
   push:
@@ -6,18 +6,15 @@ on:
       - main
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 的权限
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 只允许一个并发部署
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
-# 默认 shell
 defaults:
   run:
     shell: bash
@@ -25,29 +22,32 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      HUGO_VERSION: 0.164.0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          version: "11.3.0"
 
-      - name: Build with Hugo
-        run: |
-          hugo --minify --buildFuture
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: "pnpm"
+          cache-dependency-path: ./astro-paper/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: cd astro-paper && pnpm install --frozen-lockfile
+
+      - name: Build
+        run: cd astro-paper && pnpm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./astro-paper/dist
 
   deploy:
     needs: build
