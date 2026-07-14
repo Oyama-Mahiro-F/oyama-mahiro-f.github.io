@@ -12,7 +12,7 @@ export const siteConfig = {
   navAfter: "",
 
   // 2. Avatar
-  avatarUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%236366f1'/%3E%3Ctext x='50' y='65' text-anchor='middle' fill='white' font-size='40' font-family='sans-serif'%3EOM%3C/text%3E%3C/svg%3E",
+  avatarUrl: "/20260715062710_196_4.jpg",
 
   // 3. Background
   useGradient: true,
