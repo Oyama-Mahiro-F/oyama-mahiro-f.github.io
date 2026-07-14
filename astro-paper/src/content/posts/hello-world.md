@@ -1,7 +1,7 @@
 ---
 title: "Hello World — 博客搭建记录"
 pubDatetime: 2026-07-13
-categories: ["技术"]
+categories: ["博客"]
 description: "博客技术栈、搭建命令与部署说明"
 ---
 
