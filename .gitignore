@@ -1,10 +1,7 @@
-# Hugo build output
-/public/
+# Astro build output
+astro-paper/dist/
 
-# Generated files by Hugo
-/resources/
-
-# Node.js (if using PostCSS, Tailwind, etc.)
+# Node.js
 node_modules/
 
 # OS files
@@ -14,9 +11,6 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-
-# Hugo lock file
-.hugo_build.lock
 
 # Obsidian vault config
 .obsidian/
