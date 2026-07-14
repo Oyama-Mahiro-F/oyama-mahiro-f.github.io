@@ -1,8 +1,8 @@
 ---
-title: "存储器概述"
+title: "SRAM：静态随机存取存储器"
 date: "2026-07-14 14:00:00"
 tags: ["计算机组成原理"]
-description: "3.2 ARAM:静态随机存取存储器"
+description: "3.2 SRAM 静态随机存取存储器"
 cover: "/7eeda512e02c4053a4051f511c851d21126270233295315549.png"
 ---
 
