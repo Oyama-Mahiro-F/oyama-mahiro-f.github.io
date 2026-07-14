@@ -20,7 +20,7 @@ export const siteConfig = {
   bgImages: [],
 
   // 4. Default post cover
-  defaultPostCover: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop",
+  defaultPostCover: "",
 
   // 5. Homepage
   photoWallImage: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop",
