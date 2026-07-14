@@ -23,7 +23,7 @@
 }
 
 @utility max-w-app {
-  @apply max-w-[90rem];
+  @apply max-w-[112.5rem];
 }
 
 @utility app-layout {
