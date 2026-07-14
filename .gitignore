@@ -1,5 +1,5 @@
-# Astro build output
-astro-paper/dist/
+# Next.js build output
+.next/
 
 # Node.js
 node_modules/
@@ -12,7 +12,7 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Obsidian vault config
+# Obsidian
 .obsidian/
 
 # Claude Code
