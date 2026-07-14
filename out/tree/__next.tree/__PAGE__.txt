@@ -220,7 +220,7 @@ description: "文章摘要"
 | **DDR2/DDR3** | —                  | 提高预取位宽、降低电压           | 1.8V / 1.5V |
 | **DDR4/DDR5** | —                  | 更高频率、更低电压、更大容量     | 1.2V / 1.1V |
 
-> **DDR 的命名含义**："Double Data Rate"——每个时钟周期在上升沿和下降沿各传输一次数据，因此数据传输率 = 内存时钟频率 × 2。0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"posts":[{"id":"hello-world","slug":"hello-world","title":"Hello World — 博客搭建记录","type":"post","date":"2026-07-13 10:00:00","cover":null,"content":"$3"},{"id":"存储器概述","slug":"存储器概述","title":"存储器概述","type":"post","date":"2026-07-13 14:00:00","cover":null,"content":"$4"}],"chatters":[],"moments":[]}],["$L5","$L6","$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"p4X-0DmWr8XyK-Bzplbbs"}
+> **DDR 的命名含义**："Double Data Rate"——每个时钟周期在上升沿和下降沿各传输一次数据，因此数据传输率 = 内存时钟频率 × 2。0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"posts":[{"id":"hello-world","slug":"hello-world","title":"Hello World — 博客搭建记录","type":"post","date":"2026-07-13 10:00:00","cover":null,"content":"$3"},{"id":"存储器概述","slug":"存储器概述","title":"存储器概述","type":"post","date":"2026-07-13 14:00:00","cover":null,"content":"$4"}],"chatters":[],"moments":[]}],["$L5","$L6","$L7","$L8"],"$L9"]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"qj_TUndfbIiTBe7FU5XGc"}
 5:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/0-y7.kz1~5qzw.css","precedence":"next"}]
 6:["$","script","script-0",{"src":"/_next/static/chunks/0xvccsd0dfm3f.js","async":true}]
 7:["$","script","script-1",{"src":"/_next/static/chunks/0oh9tu6-4eu7..js","async":true}]
