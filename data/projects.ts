@@ -72,12 +72,4 @@ export const projectsData: Project[] = [
     description: "密码学算法期中项目 — 常用加解密算法工具集。",
     tags: ["密码学", "算法", "工具"],
   },
-  {
-    id: 9,
-    name: "CTF Solver",
-    icon: "🚩",
-    githubUrl: "https://github.com/Oyama-Mahiro-F/ctfSolver-master",
-    description: "CTF 竞赛解题工具集。",
-    tags: ["CTF", "安全", "工具"],
-  },
 ];
