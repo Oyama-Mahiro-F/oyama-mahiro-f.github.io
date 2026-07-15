@@ -6,13 +6,11 @@ description: "3.3 DRAM 动态随机存取存储器"
 cover: "/7eeda512e02c4053a4051f511c851d21126270233295315549.png"
 ---
 
-## （三）DRAM 存储器
-
-### 一、DRAM 存储元的记忆原理
+#### 一、DRAM 存储元的记忆原理
 
 DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无电荷 → "0"。结构为 1 个 MOS 管 + 1 个电容（1T1C）。
 
-#### 1. 核心元件与控制信号：
+##### 1. 核心元件与控制信号：
 
 在分析具体过程前，我们先明确电路中的几个关键部分：
 
@@ -27,13 +25,13 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
   2. **输出缓冲器/读放（中间）**：读操作时启用。受 R/W# 控制（高电平有效），当 R/W# 为**高电平**时导通，将位线上的信号放大并输出到 D<sub>OUT</sub>。
   3. **刷新缓冲器（最上方）**：刷新操作时启用。受“**刷新**”信号控制（高电平有效），导通时将输出端的数据重新送回位线。
 
-#### 2. 四种工作状态详解
+##### 2. 四种工作状态详解
 
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 45%; vertical-align: top; border: none; text-align: center;">
       <strong>DRAM 写入操作（1T1C 电路示意）</strong><br>
-      <img src="第3章 存储器层次结构.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn_00.png" alt="DRAM写入电路" style="max-width: 100%;">
+      <img src="DRAM.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn_00.png" alt="DRAM写入电路" style="max-width: 100%;">
     </td>
     <td style="width: 55%; vertical-align: top; border: none; padding-left: 20px;">
       <strong>控制信号</strong>
@@ -50,12 +48,14 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
     </td>
   </tr>
 </table>
+
 ---
+
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 45%; vertical-align: top; border: none; text-align: center;">
       <strong>写 0 到存储位元</strong><br>
-      <img src="第3章 存储器层次结构.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(1).png" alt="DRAM写0" style="max-width: 100%;">
+      <img src="DRAM.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(1).png" alt="DRAM写0" style="max-width: 100%;">
     </td>
     <td style="width: 55%; vertical-align: top; border: none; padding-left: 20px;">
       <strong>控制信号</strong>
@@ -72,12 +72,14 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
     </td>
   </tr>
 </table>
+
 ---
+
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 45%; vertical-align: top; border: none; text-align: center;">
       <strong>从存储位元读出 1</strong><br>
-      <img src="第3章 存储器层次结构.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(2).png" alt="DRAM读1" style="max-width: 100%;">
+      <img src="DRAM.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(2).png" alt="DRAM读1" style="max-width: 100%;">
     </td>
     <td style="width: 55%; vertical-align: top; border: none; padding-left: 20px;">
       <strong>控制信号</strong>
@@ -97,12 +99,14 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
   </tr>
 </table>
 
+
 ---
+
 <table style="width: 100%; border: none;">
   <tr style="border: none;">
     <td style="width: 45%; vertical-align: top; border: none; text-align: center;">
       <strong>刷新存储位元（读后再生）</strong><br>
-      <img src="第3章 存储器层次结构.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(3).png" alt="DRAM刷新" style="max-width: 100%;">
+      <img src="DRAM.assets/Gemini_Generated_Image_y9dn7iy9dn7iy9dn(3).png" alt="DRAM刷新" style="max-width: 100%;">
     </td>
     <td style="width: 55%; vertical-align: top; border: none; padding-left: 20px;">
       <strong>控制信号</strong>
@@ -121,26 +125,28 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
   </tr>
 </table>
 
+
 **特点**：
 
 - **破坏性读出**：读出时电容上的电荷被位线共享，需要**读后重写**恢复
 - **必须刷新**：电容会漏电，电荷约在 **2ms** 内消失 → 必须在 2ms 内刷新所有行
 - 每次刷新 = 读出一行 → 放大 → 写回（无需输出到数据端口）
 
-### 二、DRAM 芯片的逻辑结构
+#### 二、DRAM 芯片的逻辑结构
 
-![image-20260715040955872](第3章 存储器层次结构.assets/image-20260715040955872.png)
+![image-20260715040955872](DRAM.assets/image-20260715040955872.png)
 
 **DRAM 地址的分时复用**：
+
 - **RAS#**（Row Address Strobe，行地址选通）：低有效时锁存行地址
 - **CAS#**（Column Address Strobe，列地址选通）：低有效时锁存列地址
 - 同一组地址引脚分两次送入行地址和列地址，**节省引脚数**
 
-### 三、读/写周期、刷新周期
+#### 三、读/写周期、刷新周期
 
-#### 1. 读/写周期
+##### 1. 读/写周期
 
-![Gemini_Generated_Image_5a8nno5a8nno5a8n](第3章 存储器层次结构.assets/Gemini_Generated_Image_5a8nno5a8nno5a8n.png)
+![Gemini_Generated_Image_5a8nno5a8nno5a8n](DRAM.assets/Gemini_Generated_Image_5a8nno5a8nno5a8n.png)
 
 **核心前提：RAS和CAS的“锁存”作用**
 
@@ -170,7 +176,7 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
 5. **锁存写入**：在CAS低电平期间，芯片内部将DIN上的电平强行写入被选中的存储电容中。
 6. **结束**：R/W先恢复高电平，然后CAS和RAS依次结束。
 
-#### 2. 刷新周期
+##### 2. 刷新周期
 
 **（1）刷新的基本规则与特点**
 
@@ -188,15 +194,15 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
 
 **（2）三种经典刷新方式**
 
-| <nobr>刷新方式</nobr> | 操作 | 特点 |
-|:---|:---|:---|
-| <nobr>**集中刷新**</nobr> | 在固定时间段内集中刷新所有行 | 有"死区"（CPU 等待），控制简单 |
-| <nobr>**分散刷新**</nobr> | 将刷新分散到每个存取周期后（如每次读写后刷新一行） | 无死区，但存取周期 = 存取时间 + 刷新时间 |
-| <nobr>**异步刷新**</nobr> | 在 2ms 内均匀分散刷新各行 | 折中，死区小——仅在刷新某行时短暂阻塞，现代 DRAM 主流 |
+| <nobr>刷新方式</nobr>     | 操作                                               | 特点                                                 |
+| :------------------------ | :------------------------------------------------- | :--------------------------------------------------- |
+| <nobr>**集中刷新**</nobr> | 在固定时间段内集中刷新所有行                       | 有"死区"（CPU 等待），控制简单                       |
+| <nobr>**分散刷新**</nobr> | 将刷新分散到每个存取周期后（如每次读写后刷新一行） | 无死区，但存取周期 = 存取时间 + 刷新时间             |
+| <nobr>**异步刷新**</nobr> | 在 2ms 内均匀分散刷新各行                          | 折中，死区小——仅在刷新某行时短暂阻塞，现代 DRAM 主流 |
 
 > **死区（Dead Zone）**：集中刷新期间 CPU 无法访问存储器的时间段。异步刷新将死区分摊到各个刷新时刻，使每次阻塞最短。
 
-### 四、主存储器容量的扩充
+#### 四、主存储器容量的扩充
 
 **（1）位扩展**：位宽不够 → 多片并联；**并联地址，共享控制，拆分数据**
 
@@ -207,7 +213,7 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
 | <nobr>**读写控制信号 ($\overline{WE}$)**</nobr> |       **全部并联**        | 所有的芯片同时进行读操作，或同时进行写操作。                 |
 |               **数据线 ($D_i$)**                |       **分别连接**        | **唯一需要分开连接的部分。** 比如两片 $4$ 位芯片扩展为 $8$ 位，芯片 A 的 $4$ 位数据线接系统总线的 $D_0 \sim D_3$，芯片 B 的 $4$ 位数据线接系统总线的 $D_4 \sim D_7$。 |
 
-![b9916a4d8de85fad721725a997bfc248](第3章 存储器层次结构.assets/b9916a4d8de85fad721725a997bfc248.png)
+![b9916a4d8de85fad721725a997bfc248](DRAM.assets/b9916a4d8de85fad721725a997bfc248.png)
 
 **（2）字扩展**：地址空间不够 → 高位地址译码选片
 
@@ -218,22 +224,22 @@ DRAM 靠**电容存储电荷**来记忆信息：电容充有电荷 → "1"，无
 | <nobr>**读写控制 ($\overline{WE}$)**</nobr> |                 **全部并联**                  | 所有芯片接收相同的读写控制信号。                             |
 |       **片选信号 ($\overline{CS}$)**        | <nobr>**分别连接（由译码器输出控制）**</nobr> | **最核心的区别。** 每一片（或每一组）芯片的 $\overline{CS}$ 引脚，分别连接到译码器的不同输出端（如 $Y_0, Y_1 \dots$）。 |
 
-![a91a0bf7babfa0a06c5f3e41e44ef3d3](第3章 存储器层次结构.assets/a91a0bf7babfa0a06c5f3e41e44ef3d3.png)
+![a91a0bf7babfa0a06c5f3e41e44ef3d3](DRAM.assets/a91a0bf7babfa0a06c5f3e41e44ef3d3.png)
 
 **（3）字位同时扩展**：先位扩展组成所需位宽，再字扩展组成所需容量
 
-![image-20260715055515275](第3章 存储器层次结构.assets/image-20260715055515275.png)
+![image-20260715055515275](DRAM.assets/image-20260715055515275.png)
 
-### 五、SRAM 和 DRAM 的区别
+#### 五、SRAM 和 DRAM 的区别
 
-| 维度 | SRAM | DRAM |
-|:---:|:---:|:---:|
-| 存储元结构 | 6T 双稳态触发器 | 1T1C（1管1电容） |
-| 破坏性读出 | 否 | **是**（读后需重写） |
-| 刷新 | **不需要** | **必须**（2ms 内） |
-| 速度 | 快 | 较慢 |
-| 集成度 | 低 | **高** |
-| 功耗 | 低 | 较高（刷新电路） |
-| 成本 | 高 | 低 |
-| 地址送入方式 | 一次送入 | **分时复用**（行地址 + 列地址） |
-| 用途 | **Cache** | **主存** |
+|     维度     |      SRAM       |              DRAM               |
+| :----------: | :-------------: | :-----------------------------: |
+|  存储元结构  | 6T 双稳态触发器 |        1T1C（1管1电容）         |
+|  破坏性读出  |       否        |      **是**（读后需重写）       |
+|     刷新     |   **不需要**    |       **必须**（2ms 内）        |
+|     速度     |       快        |              较慢               |
+|    集成度    |       低        |             **高**              |
+|     功耗     |       低        |        较高（刷新电路）         |
+|     成本     |       高        |               低                |
+| 地址送入方式 |    一次送入     | **分时复用**（行地址 + 列地址） |
+|     用途     |    **Cache**    |            **主存**             |
