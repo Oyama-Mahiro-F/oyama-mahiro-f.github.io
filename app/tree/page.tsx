@@ -20,7 +20,7 @@ function getLocalItems(directoryName: string, typeName: string) {
         const realSlug = fileName.replace(/\.md$/, '');
 
         return {
-          id: data.id || realSlug,
+          id: data.id || `${typeName}-${realSlug}`,
           slug: realSlug, // 🌟 强制保留真实的 slug 供路由跳转使用
           title: data.title || '',
           type: typeName,
