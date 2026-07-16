@@ -8,6 +8,11 @@ cd /d/blog
 
 msg="${1:-更新博客}"
 
+echo "📷 同步图片..."
+for d in posts/*.assets; do
+  [ -d "$d" ] && cp -r "$d" public/posts/ 2>/dev/null
+done
+
 echo "📝 提交并推送..."
 git add -A
 git commit -m "$msg" || { echo "⚠️ 没有需要提交的更改"; exit 0; }
