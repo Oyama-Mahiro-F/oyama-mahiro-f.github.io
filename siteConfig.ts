@@ -16,7 +16,7 @@ export const siteConfig = {
   navAfter: "",                 // 导航栏右侧文字
 
   // ========== 浏览器标签页图标 ==========
-  faviconUrl: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236366f1'/%3E%3Ctext x='16' y='22' text-anchor='middle' fill='white' font-size='18' font-family='sans-serif'%3EM%3C/text%3E%3C/svg%3E",
+  faviconUrl: "/favicon.jpg",
 
   // ========== 背景设置 ==========
   useGradient: true,                                          // true=渐变 / false=图片背景
